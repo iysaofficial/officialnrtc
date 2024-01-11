@@ -33,7 +33,7 @@ const Category = () => {
           </div>
           <div className="col text-center mx-auto">
             <img
-              src="./assets/img/logo/edu.WebP"
+              src="./assets/img/logo/ed.png"
               className="gallery-item"
               alt="gallery"
             />
