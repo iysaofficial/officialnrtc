@@ -135,14 +135,14 @@ const data = [
     id: "faqCollapse-1",
     question: "Minsa, when will we get our LoA? Where will it be sent?",
     answer:
-      "TAfter we receive your registration, we will send a confirmation email within 1X24 hours, and for LoA we will send it to the team leader's email address within 3X24 hours after registration.",
+      "After we receive your registration, we will send a confirmation email within 1X24 hours, and for LoA we will send it to the team leader's email address within 3X24 hours after registration.",
   },
   {
     no: "2",
     datatarget: "#faqCollapse-2",
     id: "faqCollapse-2",
     question:
-      ",Minsa, I registered one week ago, but why haven't I received my LoA and Invoice yet?",
+      "Minsa, I registered one week ago, but why haven't I received my LoA and Invoice yet?",
     answer:
       "Try checking the spam folder on your team leader's email, maybe the email from the IYSA team went to the spam folder.",
   },
