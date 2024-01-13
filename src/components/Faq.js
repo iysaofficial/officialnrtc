@@ -1,4 +1,3 @@
-
 export const Faq = (props) => {
   return (
     <>
@@ -121,7 +120,6 @@ export const Faq = (props) => {
                 ))}
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -135,26 +133,26 @@ const data = [
     no: "1",
     datatarget: "#faqCollapse-1",
     id: "faqCollapse-1",
-    question: "Minsa, when will we get our LoA and Invoice? Where was it sent?",
+    question: "Minsa, when will we get our LoA? Where will it be sent?",
     answer:
-      "The committee will send LoA and Invoice no later than 14 working days after you register. We will send the LoA and Invoice to the team leaders email, so make sure you include a valid and correct email address!",
+      "TAfter we receive your registration, we will send a confirmation email within 1X24 hours, and for LoA we will send it to the team leader's email address within 3X24 hours after registration.",
   },
   {
     no: "2",
     datatarget: "#faqCollapse-2",
     id: "faqCollapse-2",
     question:
-      "Minsa, I registered a week ago but how come I have not received the LoA and Invoice yet?",
+      ",Minsa, I registered one week ago, but why haven't I received my LoA and Invoice yet?",
     answer:
-      "Try checking the spam folder in your team leaders email, maybe the email from the IYSA team will go to the spam folder",
+      "Try checking the spam folder on your team leader's email, maybe the email from the IYSA team went to the spam folder.",
   },
   {
     no: "3",
     datatarget: "#faqCollapse-3",
     id: "faqCollapse-3",
-    question: "Where to upload the competition file, Minsa?",
+    question: "Where do you upload the competition file?",
     answer:
-      "Upload the files requested by the committee to the Google Drive link that we have included in your LoA, make sure you read the LoA carefully, OK!",
+      "The drive link for uploading files and the link for uploading proof of payment will be included in the invoice. You will get an invoice like this",
   },
   {
     no: "4",
@@ -266,8 +264,7 @@ const data3 = [
     no: "2",
     datatarget: "#faqCollapse-After-2",
     id: "faqCollapse-After-2",
-    question:
-      "Where can we see the winning results?",
+    question: "Where can we see the winning results?",
     answer:
       "You can check the final results on the official website of the event you are participating in.",
   },
@@ -285,7 +282,7 @@ const data3 = [
     id: "faqCollapse-After-4",
     question: "When is the online delivery of participant certificates?",
     answer:
-      'The certificate will be sent no later than one month after the announcement of the winner. You can periodically check the delivery receipt that we sent on the Whatsapp group whether your certificate has been sent or not.',
+      "The certificate will be sent no later than one month after the announcement of the winner. You can periodically check the delivery receipt that we sent on the Whatsapp group whether your certificate has been sent or not.",
   },
   {
     no: "5",
@@ -302,5 +299,5 @@ const data3 = [
     question: "How to do medal doubling?",
     answer:
       "For offline participants, you can immediately duplicate the medals on the spot after the announcement of the winners takes place. And for online participants, you can duplicate the medals via the link we sent on the Whatsapp group, we will send duplicate information on the Whatsapp group no later than 2 days after the announcement of the winner.",
-  }
+  },
 ];
