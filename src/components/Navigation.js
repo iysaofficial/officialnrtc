@@ -99,7 +99,7 @@ const Navigation = () => {
     <header className="header">
       <div className="header-main">
         <div className="logo">
-          <img src="./assets/img/logo/IRTC.WebP" />
+          <img src="../assets/img/logo/IRTC.jpg"/>
         </div>
         <div className="open-nav-menu">
           <span></span>
@@ -128,7 +128,7 @@ const Navigation = () => {
             </li> */}
             <li className="menu-item">
               <a
-                href="https://drive.google.com/file/d/1-2luVIQYdK0oDAkzCs2227HE-VVe1P59/view?usp=share_linkt"
+                href="https://drive.google.com/file/d/1-2luVIQYdK0oDAkzCs2227HE-VVe1P59/view?usp=share_link"
                 rel="noreferrer noopener"
                 target="_blank"
               >
@@ -209,6 +209,9 @@ const Navigation = () => {
                   </a>
                 </li>
               </ul>
+            </li>
+            <li className="menu-item">
+              <a href="/News1">News</a>
             </li>
             <li className="menu-item">
               <a href="#faqs">FAQ</a>

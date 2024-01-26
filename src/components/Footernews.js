@@ -1,16 +1,17 @@
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-const Footer = () => {
+const Footernews = () => {
   return (
     <footer>
       <div className="rowFooter">
         <div className="colFooter">
-          <img
+        <h3 className="fw-bold">IRTCNRTC</h3>
+          {/* <img
             src="../assets/img/logo/IRTC.jpg"
             alt="Footer Logo"
             className="logoFooter"
-          ></img>
+          ></img> */}
           <p className="rata-kirkan">
             The ability of teachers to develop innovative products must be
             supported by the ability of teachers to present the product in front
@@ -76,4 +77,4 @@ const Footer = () => {
     </footer>
   );
 };
-export default Footer;
+export default Footernews;

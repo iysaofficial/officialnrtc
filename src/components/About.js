@@ -6,7 +6,7 @@ const About = () => {
           <div className="row ">
             <div className="col-md-6  hero-image text-center">
               <img
-                src="assets/img/logo/IRTC.WebP "
+                src="../assets/img/logo/IRTC.jpg"
                 className="img-fluid"
               ></img>
             </div>

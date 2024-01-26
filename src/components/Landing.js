@@ -5,7 +5,7 @@ const Landing = () => {
         <div class="text-center">
           <h2 class="mx-auto">Official Website</h2>
           <h1 class="mx-auto">IRTC & NRTC</h1>
-          <h3 class="mx-auto">Chose Our Website for visit</h3>
+          <h3 class="mx-auto">Choose Our Website for visit</h3>
         </div>
       </div>
 

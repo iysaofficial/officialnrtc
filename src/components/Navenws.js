@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
-const Navbar = () => {
+const Navenws = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNav = () => {
@@ -99,7 +99,9 @@ const Navbar = () => {
     <header className="header">
       <div className="header-main">
         <div className="logo">
-          <img src="./assets/img/logo/NRTC PNG.WebP" />
+          <img src="../assets/img/logo/IRTC.jpg"/>
+          
+          <img src="../assets/img/logo/NRTC PNG.WebP"/>
         </div>
         <div className="open-nav-menu">
           <span></span>
@@ -128,7 +130,7 @@ const Navbar = () => {
             </li> */}
             <li className="menu-item">
               <a
-                href="https://drive.google.com/file/d/1-2luVIQYdK0oDAkzCs2227HE-VVe1P59/view?usp=share_linkt"
+                href="https://drive.google.com/file/d/1-2luVIQYdK0oDAkzCs2227HE-VVe1P59/view?usp=share_link"
                 rel="noreferrer noopener"
                 target="_blank"
               >
@@ -153,7 +155,7 @@ const Navbar = () => {
                 Guide Book
               </a>
               <ul className="sub-menu text-center">
-                {/* <li className="menu-item">
+                <li className="menu-item">
                   <a
                     href="https://drive.google.com/file/d/1-lbeasGr6WuwzTToF6hazSeXGx-b_IxY/view?usp=sharing"
                     rel="noreferrer noopener"
@@ -161,8 +163,8 @@ const Navbar = () => {
                   >
                     Guide Book IRTC
                   </a>
-                </li> */}
-                <li className="menu-item">
+                </li>
+                {/* <li className="menu-item">
                   <a
                     href="https://drive.google.com/file/d/1OdY-7w07-bB8NASQWyWSB2v9DTh5_YBw/view?usp=sharing"
                     rel="noreferrer noopener"
@@ -170,7 +172,7 @@ const Navbar = () => {
                   >
                     Guide Book NRTC
                   </a>
-                </li>
+                </li> */}
               </ul>
             </li>
             {/* <li className="menu-item">
@@ -211,7 +213,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="menu-item">
-              <a href="/News2">News</a>
+              <a href="/News1">News</a>
             </li>
             <li className="menu-item">
               <a href="#faqs">FAQ</a>
@@ -226,4 +228,4 @@ const Navbar = () => {
     </header>
   );
 };
-export default Navbar;
+export default Navenws;

@@ -19,7 +19,7 @@ const Footer = () => {
           </p>
         </div>
         <div className="colFooter">
-          <h3>Office</h3>
+          <h3 className="fw-bold">Office</h3>
           <a
             href="https://goo.gl/maps/9x18coXGCmSscKec6"
             rel='noreferrer noopener'
@@ -51,7 +51,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="colFooter">
-          <h3>Links</h3>
+          <h3 className="fw-bold">Links</h3>
           <ul>
             <li>
               <a href="/">Home</a>
