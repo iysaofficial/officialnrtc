@@ -1,6 +1,6 @@
-import Navenws from "../../components/Navenws";
+import Navigation from "../../components/Navigation";
 import Newscomp2 from "../../components/news/Newscomp2";
-import Footernews from "../../components/Footernews";
+import Footer from "../../components/Footer";
 
 
 import "../../css/News1.css";
@@ -8,9 +8,9 @@ import "../../css/News1.css";
 function News4() {
     return (
         <div>
-        < Navenws />
+        < Navigation />
         < Newscomp2 />
-        < Footernews />
+        < Footer />
         </div>
 
     );

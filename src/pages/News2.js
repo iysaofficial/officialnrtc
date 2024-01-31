@@ -1,5 +1,5 @@
 import Navbar from "../components/nrtc/Navbar";
-import News from "../components/news/News";
+import Newsn from "../components/news/Newsn";
 import Footers from "../components/nrtc/Footers";
 
 
@@ -9,7 +9,7 @@ function News1() {
     return (
         <div>
         < Navbar />
-        < News />
+        < Newsn />
         < Footers />
         </div>
 
