@@ -27,9 +27,9 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Landingpages />} />
-          <Route path='/Irtcpage' element={<Irtcpage />} />
-          <Route path='/Nrtcpage' element={<Nrtcpage />} />
+          <Route path="/" element={<Nrtcpage />} />
+          {/* <Route path='/Irtcpage' element={<Irtcpage />} />
+          <Route path='/Nrtcpage' element={<Nrtcpage />} /> */}
           <Route path='/News1' element={<News1 />} />
           <Route path='/News2' element={<News2 />} />
           <Route path='/News3' element={<News3 />} />
