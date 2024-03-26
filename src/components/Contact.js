@@ -4,7 +4,7 @@ const Contact = () => {
       <div class="container">
         <div class="contact-box">
           <div class="box">
-            <h1>Contact Us</h1>
+            <h1>Kontak</h1>
             <div class="form-contact">
               <form action="https://formspree.io/f/xdorzyyd" method="POST">
                 <table>
@@ -12,8 +12,8 @@ const Contact = () => {
                     <td>
                       <input
                         type="text"
-                        name="First Name"
-                        placeholder="First Name"
+                        name="Nama Depan"
+                        placeholder="Nama Depan"
                         required
                         autocomplete="off"
                       />
@@ -21,8 +21,8 @@ const Contact = () => {
                     <td>
                       <input
                         type="text"
-                        name="Lash Name"
-                        placeholder="Last Name"
+                        name="Nama Belakang"
+                        placeholder="Nama Belakang"
                         autocomplete="off"
                       />
                     </td>
@@ -32,7 +32,7 @@ const Contact = () => {
                       <input
                         type="email"
                         name="email"
-                        placeholder="Your Email"
+                        placeholder="Email"
                         required
                         autocomplete="off"
                       />
@@ -44,7 +44,7 @@ const Contact = () => {
                         name="text"
                         cols="30"
                         rows="10"
-                        placeholder="Message"
+                        placeholder="Pesan"
                         required
                       ></textarea>
                     </td>
@@ -57,7 +57,7 @@ const Contact = () => {
                         onclick="return confirm"
                         className="btn-contact btn btn-primary"
                       >
-                        Send
+                        Kirim
                       </button>
                     </td>
                   </tr>

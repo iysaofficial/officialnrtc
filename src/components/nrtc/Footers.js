@@ -1,4 +1,3 @@
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
@@ -12,17 +11,17 @@ const Footer = () => {
             className="logoFooter"
           ></img>
           <p className="rata-kirkan">
-            The ability of teachers to develop innovative products must be
-            supported by the ability of teachers to present the product in front
-            of experts in order to gain input in product development and also
-            the legality of the work produced.
+            Kemampuan guru untuk mengembangkan produk inovatif harus didukung
+            oleh kemampuan guru untuk mempresentasikan produk tersebut di depan
+            para ahli untuk mendapatkan masukan dalam pengembangan produk dan
+            juga legalitas karya yang dihasilkan.
           </p>
         </div>
         <div className="colFooter">
-          <h3 className="fw-bold">Office</h3>
+          <h3 className="fw-bold">Informasi Tentang Kami</h3>
           <a
             href="https://goo.gl/maps/9x18coXGCmSscKec6"
-            rel='noreferrer noopener'
+            rel="noreferrer noopener"
             target="_blank"
             className="office rata-kirkan"
           >
@@ -33,7 +32,7 @@ const Footer = () => {
           <br></br>
           <a
             href="mailto:youngscientist.iysa@gmail.com"
-            rel='noreferrer noopener'
+            rel="noreferrer noopener"
             target="_blank"
             className="office "
           >
@@ -43,7 +42,7 @@ const Footer = () => {
           <br></br>
           <a
             href="https://wa.me/+6281770914129"
-            rel='noreferrer noopener'
+            rel="noreferrer noopener"
             target="_blank"
             className="office "
           >
@@ -67,7 +66,6 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        
       </div>
       <hr className="mx-auto" />
       <p className="copyright">

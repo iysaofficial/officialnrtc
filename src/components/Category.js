@@ -2,7 +2,7 @@ const Category = () => {
   return (
     <section className="expert-team min-vh-100 mb-5">
       <div className="pem container-lg">
-        <h1 className="text-center row-cols-sm-2">Our Categories</h1>
+        <h1 className="text-center row-cols-sm-2">Kategori</h1>
         <h1 className="garis-bawah"></h1>
         <div className="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
           <div className="col text-center mx-auto mx-auto">

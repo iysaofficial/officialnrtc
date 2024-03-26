@@ -115,7 +115,7 @@ const Navbar = () => {
           </div>
           <ul className="menu">
             <li className="menu-item mt-0">
-              <a href="/">Home</a>
+              <a href="/">Utama</a>
             </li>
             {/* <li className="menu-item">
               <a
@@ -126,59 +126,39 @@ const Navbar = () => {
                 List of Winner
               </a>
             </li> */}
-            <li className="menu-item">
+            {/* <li className="menu-item">
               <a
                 href="https://drive.google.com/file/d/1-2luVIQYdK0oDAkzCs2227HE-VVe1P59/view?usp=share_linkt"
                 rel="noreferrer noopener"
                 target="_blank"
               >
-                Press Release
+               Berita
               </a>
-            </li>
+            </li> */}
             <li className="menu-item menu-item-has-children">
               <a href="#" data-toggle="sub-menu">
-                List of Winner
+                Daftar Pemenang
               </a>
               <ul className="sub-menu text-center">
                 <li className="menu-item">
-                  <a href="https://drive.google.com/file/d/1d-kHyOz1eHjZvxVGDBpnJSMWFlwTKbte/view?usp=sharing">List of Winner 2023</a>
+                  <a href="https://drive.google.com/file/d/1d-kHyOz1eHjZvxVGDBpnJSMWFlwTKbte/view?usp=sharing">Daftar Pemenang 2023</a>
                 </li>
                 <li className="menu-item">
-                  <a href="https://drive.google.com/file/d/11u-wyqTiCAHS064A20X9HXWWdO_S3MFq/view?usp=share_link">List of Winner 2022</a>
+                  <a href="https://drive.google.com/file/d/11u-wyqTiCAHS064A20X9HXWWdO_S3MFq/view?usp=share_link">Daftar Pemenang 2022</a>
                 </li>
               </ul>
             </li>
             <li className="menu-item menu-item-has-children">
-              <a href="#" data-toggle="sub-menu">
-                Guide Book
+              <a href="https://drive.google.com/file/d/1mjYemXv8ueNBLmN-Zv3R1N9jNd6VaZ6Y/view?usp=sharing" target="_blank" data-toggle="sub-menu">
+                Buku Panduan
               </a>
-              <ul className="sub-menu text-center">
-                {/* <li className="menu-item">
-                  <a
-                    href="https://drive.google.com/file/d/1-lbeasGr6WuwzTToF6hazSeXGx-b_IxY/view?usp=sharing"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                  >
-                    Guide Book IRTC
-                  </a>
-                </li> */}
-                <li className="menu-item">
-                  <a
-                    href="https://drive.google.com/file/d/1OdY-7w07-bB8NASQWyWSB2v9DTh5_YBw/view?usp=sharing"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                  >
-                    Guide Book NRTC
-                  </a>
-                </li>
-              </ul>
             </li>
             {/* <li className="menu-item">
               <a href="/NewsletterPage">Guide Book</a>
             </li> */}
             <li className="menu-item menu-item-has-children">
               <a href="#" data-toggle="sub-menu">
-                Gallery
+                Galeri
               </a>
               <ul className="sub-menu text-center">
                 <li className="menu-item">
@@ -187,7 +167,7 @@ const Navbar = () => {
                     rel="noreferrer noopener"
                     target="_blank"
                   >
-                    Gallery 2019
+                    Galeri 2019
                   </a>
                 </li>
                 <li className="menu-item">
@@ -196,7 +176,7 @@ const Navbar = () => {
                     rel="noreferrer noopener"
                     target="_blank"
                   >
-                    Gallery 2021
+                    Galeri 2021
                   </a>
                 </li>
                 <li className="menu-item">
@@ -205,14 +185,48 @@ const Navbar = () => {
                     rel="noreferrer noopener"
                     target="_blank"
                   >
-                    Gallery 2022
+                    Galery 2022
                   </a>
                 </li>
               </ul>
             </li>
-            <li className="menu-item">
-              <a href="/News2">News</a>
+            <li className="menu-item menu-item-has-children">
+              <a href="#" data-toggle="sub-menu">
+                Media Coverage
+              </a>
+              <ul className="sub-menu text-center">
+                <li className="menu-item">
+                  <a
+                    href="/News2"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
+                    Berita
+                  </a>
+                </li>
+                <li className="menu-item">
+                  <a
+                    href="https://drive.google.com/file/d/1-2luVIQYdK0oDAkzCs2227HE-VVe1P59/view?usp=share_linkt"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
+                    Siaran Pers
+                  </a>
+                </li>
+                {/* <li className="menu-item">
+                  <a
+                    href="https://drive.google.com/drive/folders/1LMIUW9PqVYZzAXtVY22g31MAplSuKRgP?usp=sharing"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
+                    Galery 2022
+                  </a>
+                </li> */}
+              </ul>
             </li>
+            {/* <li className="menu-item">
+              <a href="/News2">News</a>
+            </li> */}
             <li className="menu-item">
               <a href="#faqs">FAQ</a>
             </li>

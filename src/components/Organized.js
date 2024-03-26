@@ -16,7 +16,7 @@ const Organized = () => {
                   alt="gallery"
                 />
                 <img
-                  src="./assets/img/logo/UdayanaLogo.WebP"
+                  src="./assets/img/logo/LOGO-AKTUARIA.png"
                   className="ms-1 col-6 image-udayana"
                   alt="gallery"
                 />
