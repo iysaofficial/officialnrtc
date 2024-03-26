@@ -7,7 +7,7 @@ const Organized = () => {
           <div className="event_sponser_item">
             <div className="row Organized-by">
               <div className="col-lg-3 col-md-4">
-                <h4 className="h_head sponser_title mb-5">Organized By :</h4>
+                <h4 className="h_head sponser_title mb-5">Diselenggarakan Oleh :</h4>
               </div>
               <div className="organized-image image col-lg-9 col-md-8 text-lg-start text-md-start text-center">
                 <img
