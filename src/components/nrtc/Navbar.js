@@ -149,7 +149,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="menu-item menu-item-has-children">
-              <a href="https://drive.google.com/file/d/1mjYemXv8ueNBLmN-Zv3R1N9jNd6VaZ6Y/view?usp=sharing" target="_blank" data-toggle="sub-menu">
+              <a href="https://drive.google.com/file/d/1EU4RwG8kX-CMJFny37s3CtPTuPOwtbWK/view?usp=sharing" target="_blank" data-toggle="sub-menu">
                 Buku Panduan
               </a>
             </li>
