@@ -12,12 +12,17 @@ const Organized = () => {
               <div className="organized-image image col-lg-9 col-md-8 text-lg-start text-md-start text-center">
                 <img
                   src="./assets/img/logo/IYSAlogo.WebP"
-                  className=" col-6 image-iysa"
+                  className=" col-3 image-iysa"
                   alt="gallery"
                 />
                 <img
-                  src="./assets/img/logo/LOGO-AKTUARIA.png"
-                  className="ms-1 col-6 image-udayana"
+                  src="./assets/img/logo/aktuaria.png"
+                  className="ms-1 col-3 image-udayana"
+                  alt="gallery"
+                />
+                <img
+                  src="./assets/img/logo/vokasi.png"
+                  className="ms-1 col-3 image-udayana"
                   alt="gallery"
                 />
               </div>
