@@ -99,7 +99,7 @@ const Navigation = () => {
     <header className="header">
       <div className="header-main">
         <div className="logo">
-          <img src="../assets/img/logo/IRTC.jpg"/>
+          <img src="../assets/img/logo/IRTC.jpg" />
         </div>
         <div className="open-nav-menu">
           <span></span>
@@ -141,17 +141,28 @@ const Navigation = () => {
               </a>
               <ul className="sub-menu text-center">
                 <li className="menu-item">
-                  <a href="https://drive.google.com/file/d/1d-kHyOz1eHjZvxVGDBpnJSMWFlwTKbte/view?usp=sharing">List of Winner 2023</a>
+                  <a href="https://drive.google.com/file/d/1d-kHyOz1eHjZvxVGDBpnJSMWFlwTKbte/view?usp=sharing">
+                    List of Winner 2023
+                  </a>
                 </li>
                 <li className="menu-item">
-                  <a href="https://drive.google.com/file/d/11u-wyqTiCAHS064A20X9HXWWdO_S3MFq/view?usp=share_link">List of Winner 2022</a>
+                  <a href="https://drive.google.com/file/d/11u-wyqTiCAHS064A20X9HXWWdO_S3MFq/view?usp=share_link">
+                    List of Winner 2022
+                  </a>
                 </li>
               </ul>
             </li>
-            <li className="menu-item menu-item-has-children">
-              <a href="#" data-toggle="sub-menu">
-                Guide Book
+            <li className="menu-item">
+              <a
+                href="https://drive.google.com/file/d/1OdY-7w07-bB8NASQWyWSB2v9DTh5_YBw/view?usp=sharing"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                Press Release
               </a>
+            </li>
+            <li className="menu-item menu-item-has-children">
+              <a href="#">Guide Book</a>
               <ul className="sub-menu text-center">
                 <li className="menu-item">
                   <a
@@ -162,7 +173,7 @@ const Navigation = () => {
                     Guide Book IRTC
                   </a>
                 </li>
-                {/* <li className="menu-item">
+                <li className="menu-item">
                   <a
                     href="https://drive.google.com/file/d/1OdY-7w07-bB8NASQWyWSB2v9DTh5_YBw/view?usp=sharing"
                     rel="noreferrer noopener"
@@ -170,7 +181,7 @@ const Navigation = () => {
                   >
                     Guide Book NRTC
                   </a>
-                </li> */}
+                </li>
               </ul>
             </li>
             {/* <li className="menu-item">
