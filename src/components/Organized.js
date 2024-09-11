@@ -17,12 +17,17 @@ const Organized = () => {
                 />
                 <img
                   src="./assets/img/logo/aktuaria.png"
-                  className="ms-1 col-3 image-udayana"
+                  className="ms-1 col-3 image-aktuaria"
                   alt="gallery"
                 />
                 <img
                   src="./assets/img/logo/vokasi.png"
-                  className="ms-1 col-3 image-udayana"
+                  className="ms-1 col-3 image-vokasi"
+                  alt="gallery"
+                />
+                <img
+                  src="./assets/img/logo/Logo-UNISMA.png"
+                  className="ms-1 col-3 image-unisma"
                   alt="gallery"
                 />
               </div>
