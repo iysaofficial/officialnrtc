@@ -1,7 +1,5 @@
 import './App.css';
 
-import Landingpages from './pages/Landingpages';
-import Irtcpage from './pages/Irtcpage';
 import Nrtcpage from './pages/Nrtcpage';
 
 // News
@@ -28,8 +26,6 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Nrtcpage />} />
-          {/* <Route path='/Irtcpage' element={<Irtcpage />} />
-          <Route path='/Nrtcpage' element={<Nrtcpage />} /> */}
           <Route path='/News1' element={<News1 />} />
           <Route path='/News2' element={<News2 />} />
           <Route path='/News3' element={<News3 />} />

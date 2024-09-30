@@ -12,7 +12,6 @@ function News1() {
         < News />
         < Footer />
         </div>
-
     );
 }
 
