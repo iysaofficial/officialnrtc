@@ -141,15 +141,36 @@ const Navbar = () => {
               </a>
               <ul className="sub-menu text-center">
                 <li className="menu-item">
-                  <a href="https://drive.google.com/file/d/1d-kHyOz1eHjZvxVGDBpnJSMWFlwTKbte/view?usp=sharing">Daftar Pemenang 2023</a>
+                  <a
+                    href="https://drive.google.com/drive/folders/1KvKdceI7uJ69vKyvRFD87W3w7AGJ2EJ3?usp=sharing"
+                    target="_blank"
+                  >
+                    Daftar Pemenang 2024
+                  </a>
                 </li>
                 <li className="menu-item">
-                  <a href="https://drive.google.com/file/d/11u-wyqTiCAHS064A20X9HXWWdO_S3MFq/view?usp=share_link">Daftar Pemenang 2022</a>
+                  <a
+                    href="https://drive.google.com/file/d/1d-kHyOz1eHjZvxVGDBpnJSMWFlwTKbte/view?usp=sharing"
+                    target="_blank"
+                  >
+                    Daftar Pemenang 2023
+                  </a>
+                </li>
+                <li className="menu-item">
+                  <a
+                    href="https://drive.google.com/file/d/11u-wyqTiCAHS064A20X9HXWWdO_S3MFq/view?usp=share_link"
+                    target="_blank"
+                  >
+                    Daftar Pemenang 2022
+                  </a>
                 </li>
               </ul>
             </li>
             <li className="menu-item menu-item-has-children">
-              <a href="https://drive.google.com/file/d/1-ESZ77LoMUYKHp4ua5-EBnL1LZWvJSPv/view?usp=sharing" target="_blank">
+              <a
+                href="https://drive.google.com/file/d/1-ESZ77LoMUYKHp4ua5-EBnL1LZWvJSPv/view?usp=sharing"
+                target="_blank"
+              >
                 Buku Panduan
               </a>
             </li>
@@ -163,11 +184,29 @@ const Navbar = () => {
               <ul className="sub-menu text-center">
                 <li className="menu-item">
                   <a
-                    href="https://drive.google.com/drive/folders/1A-0SR5F-KMgClTisz5dheVXCOnvZhcYZ?usp=sharing"
+                    href="https://drive.google.com/drive/folders/1p9ZRMi7TI6JzMjNCmeiBhlwIuxLqt7YC?usp=sharing"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
-                    Galeri 2019
+                    Galeri 2024
+                  </a>
+                </li>
+                <li className="menu-item">
+                  <a
+                    href="https://drive.google.com/drive/folders/11phBTa4qXqwNViMttlydJ_lT8M4pjP-G?usp=drive_link"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
+                    Galeri 2023
+                  </a>
+                </li>
+                <li className="menu-item">
+                  <a
+                    href="https://drive.google.com/drive/folders/1LMIUW9PqVYZzAXtVY22g31MAplSuKRgP?usp=sharing"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
+                    Galeri 2022
                   </a>
                 </li>
                 <li className="menu-item">
@@ -181,26 +220,22 @@ const Navbar = () => {
                 </li>
                 <li className="menu-item">
                   <a
-                    href="https://drive.google.com/drive/folders/1LMIUW9PqVYZzAXtVY22g31MAplSuKRgP?usp=sharing"
+                    href="https://drive.google.com/drive/folders/1A-0SR5F-KMgClTisz5dheVXCOnvZhcYZ?usp=sharing"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
-                    Galery 2022
+                    Galeri 2019
                   </a>
                 </li>
               </ul>
             </li>
             <li className="menu-item menu-item-has-children">
               <a href="#" data-toggle="sub-menu">
-                Media Coverage
+                Liputan Media
               </a>
               <ul className="sub-menu text-center">
                 <li className="menu-item">
-                  <a
-                    href="/News2"
-                    rel="noreferrer noopener"
-                    target="_blank"
-                  >
+                  <a href="/News2" rel="noreferrer noopener" target="_blank">
                     Berita
                   </a>
                 </li>
@@ -210,7 +245,7 @@ const Navbar = () => {
                     rel="noreferrer noopener"
                     target="_blank"
                   >
-                    Siaran Pers
+                    Pesan Siaran
                   </a>
                 </li>
                 {/* <li className="menu-item">
@@ -231,7 +266,7 @@ const Navbar = () => {
               <a href="#faqs">FAQ</a>
             </li>
             <li className="menu-item">
-              <a href="#conts">Contact Us</a>
+              <a href="#conts">Kontak</a>
             </li>
           </ul>
         </nav>

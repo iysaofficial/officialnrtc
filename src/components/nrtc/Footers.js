@@ -45,8 +45,17 @@ const Footer = () => {
             rel="noreferrer noopener"
             target="_blank"
             className="office "
-          >
+            >
             +62 817 7091 4129
+          </a>
+            <br></br>
+          <a
+            href="https://wa.me/+6288213248890"
+            rel='noreferrer noopener'
+            target="_blank"
+            className="office "
+          >
+            +62 882 1324 8890
           </a>
         </div>
         <div className="colFooter">
