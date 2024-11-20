@@ -197,6 +197,63 @@ a {
   transition: all 0.3s ease;
 }
 
+/* after event start */
+
+.after-event-section{
+  min-height: 100vh;
+  background: #fff;
+  padding: 5rem 9% 5rem;
+}
+
+.after-event-row{
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 320px){
+  .tes-vidio{
+      width: 280px;
+  }
+}
+
+.after-event-section .after-event-heading h1{
+  text-align: center;
+}
+
+.after-event-section .after-event-heading h1{
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.after-event-section .after-event-heading h1:after{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 4px;
+  background-color: #0A6847;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.after-event-section p{
+  text-align: justify;
+  font-size: 1rem;
+  align-items: center;
+}
+
+/* after event end */
+
 /*home section*/
 .home-section {
   width: 100%;

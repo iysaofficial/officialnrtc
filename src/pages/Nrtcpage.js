@@ -6,6 +6,7 @@ import Organized from "../components/Organized";
 import Faq from "../components/Faq";
 import Contact from "../components/Contact";
 import Footers from "../components/nrtc/Footers";
+import Video from "../components/Video";
 
 
 import "../css/Nrtc.css";
@@ -17,6 +18,7 @@ function Nrtcpage() {
         < Abouts />
         < Category />
         < Objective />
+        < Video />
         < Organized />
         < Faq />
         < Contact />
