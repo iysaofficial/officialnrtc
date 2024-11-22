@@ -241,11 +241,20 @@ const Navbar = () => {
                 </li>
                 <li className="menu-item">
                   <a
+                    href="https://drive.google.com/file/d/1nZYFOswe9xRy-s4-fTlSiHedpxFayAM2/view?usp=sharing"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
+                    Pesan Siaran 2024
+                  </a>
+                </li>
+                <li className="menu-item">
+                  <a
                     href="https://drive.google.com/file/d/1tCNqnQH-uL4rZ3Sw-uhiomupn5ZTtMjd/view?usp=sharing"
                     rel="noreferrer noopener"
                     target="_blank"
                   >
-                    Pesan Siaran
+                    Pesan Siaran 2023
                   </a>
                 </li>
                 {/* <li className="menu-item">
