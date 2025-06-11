@@ -8,9 +8,9 @@ import "../css/News1.css";
 function News1() {
     return (
         <div>
-        < Navbar />
-        < Newsn />
-        < Footers />
+        <Navbar />
+        <Newsn />
+        <Footers />
         </div>
 
     );

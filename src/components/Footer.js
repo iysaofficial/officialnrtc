@@ -1,5 +1,4 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 const Footer = () => {
   return (
     <footer>
@@ -40,14 +39,6 @@ const Footer = () => {
           </a>
           <br></br>
           <br></br>
-          <a
-            href="https://wa.me/+6281770914129"
-            rel="noreferrer noopener"
-            target="_blank"
-            className="office "
-          >
-            +62 817 7091 4129
-          </a>
         </div>
         <div className="colFooter">
           <h3 className="fw-bold">Links</h3>
@@ -58,9 +49,6 @@ const Footer = () => {
             <li>
               <a href="#faqs">FAQ</a>
             </li>
-            {/* <li>
-              <a href="/NewsletterPage">Gallery</a>
-            </li> */}
             <li>
               <a href="/GalleryPhoto">Contact Us</a>
             </li>

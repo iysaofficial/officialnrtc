@@ -3,7 +3,7 @@ const Objective = () => {
     <section className="her">
       <div className="container">
         <div className="row">
-          <div className="col-md-6  hero-image text-center">
+          <div className="col-md-6 hero-image text-center pe-3">
             <img src="assets/img/logo/obj.jpg " className="img-fluid"></img>
           </div>
           <div className="col-md-6 hero-content mb-auto">

@@ -41,15 +41,6 @@ const Footer = () => {
           <br></br>
           <br></br>
           <a
-            href="https://wa.me/+6281770914129"
-            rel="noreferrer noopener"
-            target="_blank"
-            className="office "
-            >
-            +62 817 7091 4129
-          </a>
-            <br></br>
-          <a
             href="https://wa.me/+6288213248890"
             rel='noreferrer noopener'
             target="_blank"
@@ -67,11 +58,8 @@ const Footer = () => {
             <li>
               <a href="#faqs">FAQ</a>
             </li>
-            {/* <li>
-              <a href="/NewsletterPage">Gallery</a>
-            </li> */}
             <li>
-              <a href="/GalleryPhoto">Contact Us</a>
+              <a href="#conts">Contact Us</a>
             </li>
           </ul>
         </div>

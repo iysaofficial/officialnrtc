@@ -1,9 +1,25 @@
+.news-section {
+  min-height: 100vh;
+}
+
+.row{
+  --bs-gutter-x: 0 !important;
+}
+
+.card{ 
+  margin: 1rem;
+}
+
+.subnews{
+  padding-top: 7rem;
+}
+
 .card-img{
-    width: 400px;
+    max-width: 400px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 5px;
+    /* border-radius: 5px; */
 }
 
 .news1{
@@ -11,11 +27,11 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 .news{
-    margin-bottom: 100px;
+  min-height: 100vh;
+  padding: 2rem;
 }
 
 .btnnews{
@@ -32,12 +48,6 @@
     color: #fefefe;
     box-shadow: 6px 6px #ffd700;
     transition: 0.3s;
-}
-
-.subnews{
-    margin-top: 10rem;
-    color: #fefefe;
-    font-size: 50px;
 }
 
 @media (max-width: 426px) {

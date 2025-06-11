@@ -10,21 +10,22 @@ import Video from "../components/Video";
 
 
 import "../css/Nrtc.css";
+import HeroSection from "../components/HeroSection";
 
 function Nrtcpage() {
     return (
-        <div>
-        < Navbar />
-        < Abouts />
-        < Category />
-        < Objective />
-        < Video />
-        < Organized />
-        < Faq />
-        < Contact />
-        < Footers />
-        </div>
-
+        <>
+            <Navbar />
+            <HeroSection />
+            <Abouts />
+            <Category />
+            <Objective />
+            <Video />
+            <Organized />
+            <Faq />
+            <Contact />
+            <Footers />
+        </>
     );
 }
 
