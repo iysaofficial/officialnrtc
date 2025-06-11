@@ -1,5 +1,7 @@
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
+import Navbar from "../../components/nrtc/Navbar";
+import Footer from "../../components/nrtc/Footers";
 import "../../css/registration.css";
 
 function Thankyou() {
@@ -12,6 +14,8 @@ function Thankyou() {
   const schoolName = searchParams.get("namasekolah") || "No data available";
 
   return (
+    <>
+    <Navbar />
     <section className="thankyou">
       <div>
         <h1>Terima Kasih telah mendaftar!</h1>
@@ -58,6 +62,8 @@ function Thankyou() {
         </Link>
       </div>
     </section>
+    <Footer />
+    </>
   );
 }
 
