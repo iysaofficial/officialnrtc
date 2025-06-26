@@ -49,7 +49,7 @@ function IndonesiaOnline() {
     // Logika untuk menentukan harga berdasarkan kategori yang dipilih
     switch (value) {
       case "National Research Teacher Competition - Online Competition":
-        setCategoryPrice("RP 950.000");
+        setCategoryPrice("RP 900.000");
         break;
       default:
         break;
