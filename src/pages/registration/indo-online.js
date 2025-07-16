@@ -49,7 +49,7 @@ function IndonesiaOnline() {
     // Logika untuk menentukan harga berdasarkan kategori yang dipilih
     switch (value) {
       case "National Research Teacher Competition - Online Competition":
-        setCategoryPrice("RP 950.000");
+        setCategoryPrice("RP 900.000");
         break;
       default:
         break;
@@ -536,7 +536,9 @@ function IndonesiaOnline() {
                     required
                   >
                     <option value="">--Pilih Kategori--</option>
-                    <option value="Sustainability Development">Sustainability Development</option>
+                    <option value="Sustainability Development">
+                      Sustainability Development
+                    </option>
                     <option value="Life Science">Life Science</option>
                     <option value="Engineering">Engineering</option>
                     <option value="Education">Education</option>
@@ -580,6 +582,21 @@ function IndonesiaOnline() {
                     placeholder="Masukan Nama Kompetisinya"
                   ></textarea>
                   <div className="mt-5" id="form_alerts"></div>
+                </div>
+                {/* Kolom Harga */}
+                <div className="input-box invisible">
+                  <label htmlFor="CATEGORY_PRICE" className="form-label ">
+                    Registration Price
+                  </label>
+                  <input
+                    type="text"
+                    id="CATEGORY_PRICE"
+                    name="CATEGORY_PRICE"
+                    className="form-control"
+                    value={categoryPrice}
+                    readOnly
+                    placeholder="Harga akan muncul berdasarkan kategori yang dipilih"
+                  />
                 </div>
               </div>
               {/* DETAIL PROJECT END */}
