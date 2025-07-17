@@ -317,7 +317,7 @@ function IndonesiaOffline() {
                     required
                   />
                 </div>
-                <div className="input-box">
+                {/* <div className="input-box">
                   <label for="NISN_NIM" className="form-label">
                     NISN / NIM Ketua & Anggota Tim
                   </label>
@@ -338,7 +338,7 @@ function IndonesiaOffline() {
                     placeholder="Masukan NISN / NIM Ketua & Anggota Tim"
                     required
                   ></textarea>
-                </div>
+                </div> */}
               </div>
 
               {/* DATA SEKOLAH START */}
@@ -374,7 +374,7 @@ function IndonesiaOffline() {
                     {selectedNamaSekolah.length} / {maxSchoolChars} karakter
                   </p>
                 </div>
-                <div className="input-box">
+                {/* <div className="input-box">
                   <label for="NPSN" className="form-label">
                     Nomor Pokok Sekolah Nasional (NPSN)
                   </label>
@@ -418,7 +418,7 @@ function IndonesiaOffline() {
                     </option>
                     <option value="Universitas">Universitas</option>
                   </select>
-                </div>
+                </div> */}
                 <div className="input-box">
                   <label for="PROVINCE" className="form-label">
                     Provinsi
@@ -445,14 +445,14 @@ function IndonesiaOffline() {
               <div className="user-details">
                 <div className="input-box">
                   <label for="NAME_SUPERVISOR" className="form-label">
-                    Nama Guru/Pembimbing
+                    Nama Pembimbing
                   </label>
                   <textarea
                     type="text"
                     id="NAME_SUPERVISOR"
                     name="NAME_SUPERVISOR"
                     className="form-control"
-                    placeholder="Masukan Nama Guru/Pembimbing"
+                    placeholder="Masukan Nama Pembimbing"
                     required
                   ></textarea>
                 </div>
@@ -461,7 +461,7 @@ function IndonesiaOffline() {
                     for="WHATSAPP_NUMBER_SUPERVISOR"
                     className="form-label"
                   >
-                    Nomor WhatsApp Guru/Pembimbing
+                    Nomor WhatsApp Pembimbing
                     <p>
                       Harap tulis dengan kode telepon, contoh : (kode negara)
                       (nomor telepon) +62 81770914xxx
@@ -472,21 +472,21 @@ function IndonesiaOffline() {
                     id="WHATSAPP_NUMBER_SUPERVISOR"
                     name="WHATSAPP_NUMBER_SUPERVISOR"
                     className="form-control"
-                    placeholder="Masukan Nomor WhatsApp Guru/Pembimbing"
+                    placeholder="Masukan Nomor WhatsApp Pembimbing"
                     required
                   />
                 </div>
 
                 <div className="input-box">
                   <label for="EMAIL_TEACHER_SUPERVISOR" className="form-label">
-                    Alamat Email Guru/Pembimbing
+                    Alamat Email Pembimbing
                   </label>
                   <input
                     type="email"
                     id="EMAIL_TEACHER_SUPERVISOR"
                     name="EMAIL_TEACHER_SUPERVISOR"
                     className="form-control"
-                    placeholder="Alamat Email Guru/Pembimbing"
+                    placeholder="Alamat Email Pembimbing"
                     required
                   />
                 </div>
