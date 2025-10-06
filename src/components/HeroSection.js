@@ -23,8 +23,11 @@ const HeroSection = () => {
             >
               Lihat Buku Panduan
             </a>
-            <a href="/homeindo" className="main-hero-btn main-hero-btn-yellow">
+            {/* <a href="/homeindo" className="main-hero-btn main-hero-btn-yellow">
               Daftar Sekarang!
+            </a> */}
+            <a href="/" className="main-hero-btn main-hero-btn-yellow">
+              Tutup Pendaftaran
             </a>
           </div>
         </div>

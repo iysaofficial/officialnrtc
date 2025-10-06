@@ -49,22 +49,30 @@ function HomeIndo() {
             </div>
           </div>
           <div className="link-web mx-auto text-center">
-            <a
+            {/* <a
               className="btn-regist btn-action text-center me-lg-5 m-2"
               onClick={() =>
                 handleOpenModal("/indo-online", indonesiaOnlineTerms)
               }
             >
               Kompetisi Online<i className="fa-solid fa-earth-americas"></i>
-            </a>
+            </a> */}
             <a
+              className="btn-regist btn-action text-center me-lg-5 m-2"
+              onClick={() =>
+                handleOpenModal("/", )
+              }
+            >
+              Tutup Pendaftaran <i className="fa-solid fa-earth-americas"></i>
+            </a>
+            {/* <a
               className="btn-regist btn-action text-center me-lg-5 m-2"
               onClick={() =>
                 handleOpenModal("/indo-offline", indonesiaOfflineTerms)
               }
             >
               Kompetisi Offline<i className="fa-solid fa-earth-americas"></i>
-            </a>
+            </a> */}
           </div>
         </div>
       </section>
