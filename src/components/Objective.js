@@ -4,11 +4,11 @@ const Objective = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6 hero-image text-center pe-3">
-            <img src="assets/img/logo/obj.jpg " className="img-fluid"></img>
+            <img src="assets/img/logo/obj.jpg " alt="Objective" className="img-fluid"></img>
           </div>
           <div className="col-md-6 hero-content mb-auto">
             <h1 className="halo">Objektifitas</h1>
-            <h1 className="garis-bawah"></h1>
+            <span className="garis-bawah"></span>
             <h4 className="mt-5">01</h4>
             <p className="mt-3">
               Meningkatkan kompetensi guru, khususnya di bidang bidang riset dan

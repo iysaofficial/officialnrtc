@@ -113,12 +113,12 @@ function IndonesiaOffline() {
         setStatusMessage("Data berhasil dikirim!");
 
         // Ambil data sebelum reset
-        const formData = {
-          namaLengkap: selectedMaxNamaLengkap,
-          projectTitle: selectedMaxProject,
-          category: selectedCategory,
-          namasekolah: selectedNamaSekolah,
-        };
+        // const formData = {
+        //   namaLengkap: selectedMaxNamaLengkap,
+        //   projectTitle: selectedMaxProject,
+        //   category: selectedCategory,
+        //   namasekolah: selectedNamaSekolah,
+        // };
 
         form.reset();
         setTimeout(() => {
@@ -146,7 +146,7 @@ function IndonesiaOffline() {
         <div className="container">
           <div className="content">
             <h1 className="sub">FORMULIR PENDAFTARAN</h1>
-            <h1 className="garis-bawah"></h1>
+            <span className="garis-bawah"></span>
             <br />
             <br />
             <h4>
@@ -208,7 +208,7 @@ function IndonesiaOffline() {
 
             <form name="regist-form">
               <h1 className="text-sm md:text-lg lg:text-5xl">BIODATA</h1>
-              <h1 className="garis-bawah"></h1>
+              <span className="garis-bawah"></span>
               <div className="user-details">
                 <div className="input-box">
                   <label className="form-label" value="Peserta Indonesia">
@@ -345,7 +345,7 @@ function IndonesiaOffline() {
               {/* DATA SEKOLAH START */}
               {/* DATA SEKOLAH START */}
               <h1 className="text-sm md:text-lg lg:text-5xl">DATA SEKOLAH</h1>
-              <h1 className="garis-bawah"></h1>
+              <span className="garis-bawah"></span>
               <div className="user-details">
                 <div className="input-box">
                   <label htmlFor="NAMA_SEKOLAH" className="form-label">
@@ -442,8 +442,8 @@ function IndonesiaOffline() {
               <h1 className="text-sm md:text-lg lg:text-5xl">
                 DATA PEMBIMBING
               </h1>
-              <h1 className="garis-bawah"></h1>
-              <div className="user-details">
+              <span className="garis-bawah"></span>
+              <span className="user-details">
                 <div className="input-box">
                   <label for="NAME_SUPERVISOR" className="form-label">
                     Nama Pembimbing
@@ -491,7 +491,7 @@ function IndonesiaOffline() {
                     required
                   />
                 </div>
-              </div>
+              </span>
               {/* DATA PEMBIMBING END */}
               {/* DATA PEMBIMBING END */}
 
@@ -501,7 +501,7 @@ function IndonesiaOffline() {
                 <h1 className="text-sm md:text-lg lg:text-5xl">
                   DETAIL PROYEK
                 </h1>
-                <h1 className="garis-bawah"></h1>
+                 <span className="garis-bawah"></span>
               </div>
               <div className="user-details">
                 <div className="input-box">
@@ -594,7 +594,7 @@ function IndonesiaOffline() {
                 <h1 className="text-sm md:text-lg lg:text-5xl">
                   INFORMASI UMUM
                 </h1>
-                <h1 className="garis-bawah"></h1>
+                <span className="garis-bawah"></span>
               </div>
               <div className="user-details">
                 <div className="input-box">

@@ -75,6 +75,7 @@ const Newscomp4 = () => {
               target="_blank"
               href="https://updatebali.com/diikuti-685-tim-dari-28-negara-universitas-udayana-dan-iysa-berkolaborasi-gelar-isif-ke-5/"
               class="text-muted col-sm-12"
+              rel="noreferrer noopener"
             >
               Sumber: Klik di sini
             </a>

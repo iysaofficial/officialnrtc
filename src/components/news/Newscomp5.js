@@ -62,6 +62,7 @@ const Newscomp5 = () => {
               target="_blank"
               href="https://lenteraesai.id/2023/11/10/isif-2023-yang-diselenggarakan-atas-kolaborasi-unud-dengan-iysa-resmi-ditutup/"
               class="text-muted col-sm-12"
+              rel="noreferrer noopener"
             >
               Sumber: Klik di sini
             </a>

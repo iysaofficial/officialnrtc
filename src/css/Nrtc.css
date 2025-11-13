@@ -54,8 +54,29 @@ a {
   transition: all 0.3s ease;
 }
 
+.header .menu > .menu-item > p {
+  display: block;
+  padding: 12px 0;
+  margin: 5px;
+  font-size: 15px;
+  color: #333333;
+  text-transform: capitalize;
+  font-weight: 550;
+  transition: all 0.3s ease;
+}
+
 @media (max-width: 1025px) {
   .header .menu > .menu-item > a {
+    display: block;
+    padding: 12px 0;
+    margin: 0px;
+    font-size: 14px;
+    color: #000000;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  .header .menu > .menu-item > p {
     display: block;
     padding: 12px 0;
     margin: 0px;
@@ -95,8 +116,37 @@ a {
 .header .menu > .menu-item > a .FaChevronDown:after {
   transform: translate(-50%, -50%) rotate(180deg);
 }
+
+.header .menu > .menu-item > p .FaChevronDown {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  position: relative;
+  margin-left: 5px;
+  pointer-events: none;
+}
+.header .menu > .menu-item > p .FaChevronDown:before,
+.header .menu > .menu-item > p .FaChevronDown:after {
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  left: 50%;
+  top: 50%;
+  background-color: #000000;
+  height: 2px;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+.header .menu > .menu-item:hover > p .FaChevronDown:before,
+.header .menu > .menu-item:hover > p .FaChevronDown:after {
+  background-color: #483d8b;
+}
+.header .menu > .menu-item > p .FaChevronDown:after {
+  transform: translate(-50%, -50%) rotate(180deg);
+}
 .header .menu > .menu-item > .sub-menu > .menu-item > a:hover,
-.header .menu > .menu-item:hover > a {
+.header .menu > .menu-item:hover > p {
   color: #483d8b;
 }
 .header .menu > .menu-item > .sub-menu {
@@ -131,6 +181,16 @@ a {
   display: block;
 }
 .header .menu > .menu-item > .sub-menu > .menu-item > a {
+  display: block;
+  padding: 5px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.header .menu > .menu-item > .sub-menu > .menu-item > p {
   display: block;
   padding: 5px 20px;
   font-size: 16px;

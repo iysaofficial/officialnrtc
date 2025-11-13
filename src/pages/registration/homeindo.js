@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { indonesiaOnlineTerms, indonesiaOfflineTerms } from "../data/term";
+// import { indonesiaOnlineTerms, indonesiaOfflineTerms } from "../data/term";
 import Navbar from "../../components/nrtc/Navbar";
 import Footer from "../../components/nrtc/Footers";
 import "../../css/registration.css";
@@ -7,14 +7,16 @@ import "../../css/registration.css";
 function HomeIndo() {
   const [showModal, setShowModal] = useState(false);
   const [termsAccepted, setTermsAccepted] = useState(false);
-  const [redirectLink, setRedirectLink] = useState("");
-  const [termsContent, setTermsContent] = useState("");
+  const [redirectLink] = useState("");
+  const [termsContent] = useState("");
+  // const [redirectLink, setRedirectLink] = useState("");
+  // const [termsContent, setTermsContent] = useState("");
 
-  const handleOpenModal = (link, terms) => {
-    setRedirectLink(link);
-    setTermsContent(terms);
-    setShowModal(true);
-  };
+  // const handleOpenModal = (link, terms) => {
+  //   setRedirectLink(link);
+  //   setTermsContent(terms);
+  //   setShowModal(true);
+  // };
 
   const handleAccept = () => {
     if (termsAccepted) {
@@ -57,14 +59,14 @@ function HomeIndo() {
             >
               Kompetisi Online<i className="fa-solid fa-earth-americas"></i>
             </a> */}
-            <a
+            {/* <a
               className="btn-regist btn-action text-center me-lg-5 m-2"
               onClick={() =>
                 handleOpenModal("/", )
               }
             >
               Tutup Pendaftaran <i className="fa-solid fa-earth-americas"></i>
-            </a>
+            </a> */}
             {/* <a
               className="btn-regist btn-action text-center me-lg-5 m-2"
               onClick={() =>

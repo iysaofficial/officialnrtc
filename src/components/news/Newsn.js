@@ -26,6 +26,7 @@ const Newsn = () => {
                   href="https://kaltengpos.jawapos.com/metropolis/pendidikan/10/11/2024/guru-dan-siswa-sman-2-palangka-raya-raih-prestasi-gemilang-di-nrtc-dan-isif/"
                   target="_blank"
                   class="btnnews btn btn-primary"
+                  rel="noreferrer noopener"
                 >
                   Lihat
                 </a>

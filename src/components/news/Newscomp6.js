@@ -91,6 +91,7 @@ const Newscomp6 = () => {
               target="_blank"
               href="https://www.baliviralnews.com/diikuti-peserta-dari-28-negara-unud-tuan-rumah-isif-iif-nrtc-dan-irtc-2023/"
               class="text-muted col-sm-12"
+              rel="noreferrer noopener"
             >
               Sumber: Klik di sini
             </a>

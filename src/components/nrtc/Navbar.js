@@ -1,31 +1,32 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleNav = () => {
-    setIsOpen(!isOpen);
+  const toggleNav = useCallback(() => {
+    setIsOpen((prev) => !prev);
     document.body.classList.toggle("hidden-scrolling");
-  };
+  }, []);
 
-  const collapseSubMenu = () => {
+  const collapseSubMenu = useCallback(() => {
     const activeSubMenu = document.querySelector(
       ".menu-item-has-children.active .sub-menu"
     );
-    activeSubMenu.removeAttribute("style");
-    activeSubMenu.parentElement.classList.remove("active");
-  };
-
-  const resizeFix = () => {
-    if (isOpen) {
-      toggleNav();
+    if (activeSubMenu) {
+      activeSubMenu.removeAttribute("style");
+      activeSubMenu.parentElement.classList.remove("active");
     }
+  }, []);
+
+  const resizeFix = useCallback(() => {
+    if (isOpen) toggleNav();
     if (document.querySelector(".menu-item-has-children.active")) {
       collapseSubMenu();
     }
-  };
+  }, [isOpen, toggleNav, collapseSubMenu]); // ⬅️ sekarang fix!
 
   useEffect(() => {
     const mediaSize = 991;
@@ -93,13 +94,13 @@ const Navbar = () => {
         .removeEventListener("click", handleMenuClick);
       window.removeEventListener("resize", handleResize);
     };
-  }, [isOpen]);
+  }, [collapseSubMenu, resizeFix, toggleNav]); // sudah aman
 
   return (
     <header className="header">
       <div className="header-main">
         <div className="logo">
-          <img src="./assets/img/logo/NRTC PNG.WebP" />
+          <img src="./assets/img/logo/NRTC PNG.WebP" alt="nrtc png" />
         </div>
         <div className="open-nav-menu">
           <span></span>
@@ -114,14 +115,13 @@ const Navbar = () => {
               <a href="/">Beranda</a>
             </li>
             <li className="menu-item menu-item-has-children">
-              <a href="#" data-toggle="sub-menu">
-                Daftar Pemenang
-              </a>
+              <p data-toggle="sub-menu">Daftar Pemenang</p>
               <ul className="sub-menu text-center">
                 <li className="menu-item">
                   <a
                     href="https://drive.google.com/file/d/1vSTtAhWpRCBZlRyLLht_0JQaGtLzbK5d/view?usp=sharing"
                     target="_blank"
+                    rel="noreferrer noopener"
                   >
                     Daftar Pemenang 2025
                   </a>
@@ -130,6 +130,7 @@ const Navbar = () => {
                   <a
                     href="https://drive.google.com/drive/folders/1KvKdceI7uJ69vKyvRFD87W3w7AGJ2EJ3?usp=sharing"
                     target="_blank"
+                    rel="noreferrer noopener"
                   >
                     Daftar Pemenang 2024
                   </a>
@@ -138,6 +139,7 @@ const Navbar = () => {
                   <a
                     href="https://drive.google.com/file/d/1d-kHyOz1eHjZvxVGDBpnJSMWFlwTKbte/view?usp=sharing"
                     target="_blank"
+                    rel="noreferrer noopener"
                   >
                     Daftar Pemenang 2023
                   </a>
@@ -146,6 +148,7 @@ const Navbar = () => {
                   <a
                     href="https://drive.google.com/file/d/11u-wyqTiCAHS064A20X9HXWWdO_S3MFq/view?usp=share_link"
                     target="_blank"
+                    rel="noreferrer noopener"
                   >
                     Daftar Pemenang 2022
                   </a>
@@ -156,14 +159,13 @@ const Navbar = () => {
               <a
                 href="https://drive.google.com/file/d/1FD4SoRz3ENzYAT-TSWpNFDl-5ngURgoP/view?usp=sharing"
                 target="_blank"
+                rel="noreferrer noopener"
               >
                 Buku Panduan
               </a>
             </li>
             <li className="menu-item menu-item-has-children">
-              <a href="#" data-toggle="sub-menu">
-                Galeri
-              </a>
+              <p data-toggle="sub-menu">Galeri</p>
               <ul className="sub-menu text-center">
                 <li className="menu-item">
                   <a
@@ -213,9 +215,7 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="menu-item menu-item-has-children">
-              <a href="#" data-toggle="sub-menu">
-                Liputan Media
-              </a>
+              <p data-toggle="sub-menu">Liputan Media</p>
               <ul className="sub-menu text-center">
                 <li className="menu-item">
                   <a href="/News2" rel="noreferrer noopener">
@@ -240,18 +240,16 @@ const Navbar = () => {
                     Pesan Siaran 2023
                   </a>
                 </li>
-                
               </ul>
             </li>
             <li className="menu-item menu-item-has-children">
-              <a href="#" data-toggle="sub-menu">
-                Supervisor
-              </a>
+              <p data-toggle="sub-menu">Supervisor</p>
               <ul className="sub-menu text-center">
                 <li className="menu-item">
                   <a
                     href="https://drive.google.com/drive/folders/1dDRdFJ9L-VV5sgxCn-4HQXFSgOB3WDfq?usp=sharing"
                     target="_blank"
+                    rel="noreferrer noopener"
                   >
                     Sertifikat Supervisor 2025
                   </a>
