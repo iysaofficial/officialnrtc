@@ -120,6 +120,14 @@ const Navbar = () => {
               <ul className="sub-menu text-center">
                 <li className="menu-item">
                   <a
+                    href="https://drive.google.com/file/d/1vSTtAhWpRCBZlRyLLht_0JQaGtLzbK5d/view?usp=sharing"
+                    target="_blank"
+                  >
+                    Daftar Pemenang 2025
+                  </a>
+                </li>
+                <li className="menu-item">
+                  <a
                     href="https://drive.google.com/drive/folders/1KvKdceI7uJ69vKyvRFD87W3w7AGJ2EJ3?usp=sharing"
                     target="_blank"
                   >
@@ -233,6 +241,21 @@ const Navbar = () => {
                   </a>
                 </li>
                 
+              </ul>
+            </li>
+            <li className="menu-item menu-item-has-children">
+              <a href="#" data-toggle="sub-menu">
+                Supervisor
+              </a>
+              <ul className="sub-menu text-center">
+                <li className="menu-item">
+                  <a
+                    href="https://drive.google.com/drive/folders/1dDRdFJ9L-VV5sgxCn-4HQXFSgOB3WDfq?usp=sharing"
+                    target="_blank"
+                  >
+                    Sertifikat Supervisor 2025
+                  </a>
+                </li>
               </ul>
             </li>
             <li className="menu-item">
