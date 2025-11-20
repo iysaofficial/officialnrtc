@@ -119,38 +119,11 @@ const Navbar = () => {
               <ul className="sub-menu text-center">
                 <li className="menu-item">
                   <a
-                    href="https://drive.google.com/file/d/1vSTtAhWpRCBZlRyLLht_0JQaGtLzbK5d/view?usp=sharing"
+                    href="listlow"
                     target="_blank"
                     rel="noreferrer noopener"
                   >
-                    Daftar Pemenang 2025
-                  </a>
-                </li>
-                <li className="menu-item">
-                  <a
-                    href="https://drive.google.com/drive/folders/1KvKdceI7uJ69vKyvRFD87W3w7AGJ2EJ3?usp=sharing"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    Daftar Pemenang 2024
-                  </a>
-                </li>
-                <li className="menu-item">
-                  <a
-                    href="https://drive.google.com/file/d/1d-kHyOz1eHjZvxVGDBpnJSMWFlwTKbte/view?usp=sharing"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    Daftar Pemenang 2023
-                  </a>
-                </li>
-                <li className="menu-item">
-                  <a
-                    href="https://drive.google.com/file/d/11u-wyqTiCAHS064A20X9HXWWdO_S3MFq/view?usp=share_link"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    Daftar Pemenang 2022
+                    Daftar Pemenang
                   </a>
                 </li>
               </ul>
@@ -167,6 +140,15 @@ const Navbar = () => {
             <li className="menu-item menu-item-has-children">
               <p data-toggle="sub-menu">Galeri</p>
               <ul className="sub-menu text-center">
+                <li className="menu-item">
+                  <a
+                    href="https://drive.google.com/drive/folders/1p-oWDrc1b9JgqGjVkgZ3tWzin0SCTDed?usp=sharing"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
+                    Galeri 2025
+                  </a>
+                </li>
                 <li className="menu-item">
                   <a
                     href="https://drive.google.com/drive/folders/1p9ZRMi7TI6JzMjNCmeiBhlwIuxLqt7YC?usp=sharing"
@@ -220,6 +202,15 @@ const Navbar = () => {
                 <li className="menu-item">
                   <a href="/News2" rel="noreferrer noopener">
                     Berita dari Media
+                  </a>
+                </li>
+                <li className="menu-item">
+                  <a
+                    href="https://drive.google.com/file/d/12D5KTwhSXcKZO8osMVpFk47Etgk0kGzY/view?usp=sharing"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
+                    Pesan Siaran 2025
                   </a>
                 </li>
                 <li className="menu-item">

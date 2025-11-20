@@ -15,6 +15,10 @@ import IndonesiaOffline from './pages/registration/indo-offline';
 import IndonesiaOnline from './pages/registration/indo-online';
 import Thankyou from './pages/registration/thankyou';
 
+import ListLow from './pages/low/listlow'
+import List2024 from './pages/low/2024/list2024'
+import List2025 from './pages/low//2025/list2025'
+
 
 import {
   BrowserRouter as Router,
@@ -37,6 +41,9 @@ function App() {
           <Route path='/indo-online' element={<IndonesiaOnline />} />
           <Route path='/indo-offline' element={<IndonesiaOffline />} />
           <Route path='/thankyou' element={<Thankyou />} />
+          <Route path='/listlow' element={<ListLow />} />
+          <Route path='/list2024' element={<List2024 />} />
+          <Route path='/list2025' element={<List2025 />} />
         </Routes>
       </Router>
     </>
