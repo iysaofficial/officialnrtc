@@ -71,7 +71,6 @@ export default function List2025() {
                     {link ? (
                       <a
                         href={link}
-                        target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-primary"
                         aria-label={`Open ${cat.label} winners PDF (${mode})`}

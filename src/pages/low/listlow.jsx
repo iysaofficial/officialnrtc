@@ -69,7 +69,6 @@ function ListLow() {
                   ) : (
                     <a
                       href={item.link}
-                      target="_blank"
                       className="btn btn-primary rounded-pill px-5"
                     >
                       Open
