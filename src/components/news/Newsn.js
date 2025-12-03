@@ -7,6 +7,48 @@ const Newsn = () => {
           <div class="news1 col-sm-4">
             <div class="card">
               <img
+                src="../assets/img/logo/20251.jpg"
+                class="card-img col-sm-3"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title mt-3 fw-bold">
+                  NSIF, ISIF, NRTC, dan IRTC 2025 Sukses Digelar, Hadirkan 774 Tim dari 24 Negara
+                </h5>
+                <p class="card-text">
+                  Jabaran.id - Empat kompetisi ilmiah bergengsi yang diselenggarakan oleh Indonesian Young Scientist Association (IYSA) bekerja sama dengan Sekolah Vokasi Universitas Diponegoro dan İzmir International Innovation Science Energy Engineering Fair (İzmiriiseef), kembali mencatatkan penyelenggaraan yang sukses pada tahun 2025. Ajang yang terdiri dari National Science and Invention Fair (NSIF), International Science and Invention Fair (ISIF), National Research Teacher Competition (NRTC), dan International Research Teacher Competition (IRTC) ini menarik minat 774 tim peneliti dari dalam dan luar negeri.
+                </p>
+                <a href="https://jabaran.id/nsif-isif-nrtc-dan-irtc-2025-sukses-digelar-hadirkan-774-tim-dari-24-negara/" class="btnnews btn btn-primary">
+                  Lihat
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="news1 col-sm-4">
+            <div class="card">
+              <img
+                src="../assets/img/logo/20252.jpg"
+                class="card-img col-sm-3"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title mt-3 fw-bold">
+                  Guru MAN 3 Palembang Raih Medali Emas Kompetisi Riset Nasional Lewat Inovasi Berbasis Kearifan Lokal
+                </h5>
+                <p class="card-text">
+                  PALEMBANG, SUMEKS.CO - Guru madrasah kembali menorehkan prestasi membanggakan di panggung nasional. Andarusni Alfansyur, guru PPKn Madrasah Aliyah Negeri (MAN) 3 Palembang, meraih Medali Emas pada The 5th National Research Teacher Competition (NRTC) di Hongkong Garden International Restaurant, Denpasar, Bali, 12-15 November 2025.
+                </p>
+                <a href="https://sumeks.disway.id/edukasi/read/768977/guru-man-3-palembang-raih-medali-emas-kompetisi-riset-nasional-lewat-inovasi-berbasis-kearifan-lokal" class="btnnews btn btn-primary">
+                  Lihat
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row news">
+          <div class="news1 col-sm-4">
+            <div class="card">
+              <img
                 src="../assets/img/berita/sman2palangkaraya.png"
                 class="card-img col-sm-4"
                 alt="..."
