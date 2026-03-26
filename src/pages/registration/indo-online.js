@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../../components/nrtc/Navbar";
+
 import Footer from "../../components/nrtc/Footers";
 import "../../css/registration.css";
 
@@ -111,14 +111,7 @@ function IndonesiaOnline() {
       if (response.ok) {
         setStatusMessage("Data berhasil dikirim!");
 
-        // Ambil data sebelum reset
-        const formData = {
-          namaLengkap: selectedMaxNamaLengkap,
-          projectTitle: selectedMaxProject,
-          category: selectedCategory,
-          categoryPrice: categoryPrice,
-          namasekolah: selectedNamaSekolah,
-        };
+
 
         form.reset();
         setTimeout(() => {
@@ -207,7 +200,7 @@ function IndonesiaOnline() {
 
             <form name="regist-form">
               <h1 className="text-sm md:text-lg lg:text-5xl">BIODATA</h1>
-              <h1 className="garis-bawah"></h1>
+              <span className="garis-bawah"></span>
               <div className="user-details">
                 <div className="input-box">
                   <label className="form-label">Kategori Peserta</label>
@@ -492,7 +485,7 @@ function IndonesiaOnline() {
                 <h1 className="text-sm md:text-lg lg:text-5xl">
                   DETAIL PROYEK
                 </h1>
-                <h1 className="garis-bawah"></h1>
+                <span className="garis-bawah"></span>
               </div>
               <div className="user-details">
                 <div className="input-box">
@@ -601,7 +594,7 @@ function IndonesiaOnline() {
                 <h1 className="text-sm md:text-lg lg:text-5xl">
                   INFORMASI UMUM
                 </h1>
-                <h1 className="garis-bawah"></h1>
+                <span className="garis-bawah"></span>
               </div>
               <div className="user-details">
                 <div className="input-box">
