@@ -64,41 +64,35 @@ function IndonesiaOnline() {
     }
   }, [navigate]);
 
-  // const scriptURL =
-  //   "https://script.google.com/macros/s/AKfycbylpfxrXmxKST27R_VZiHWGY7K30A5oWP0JJ6Ay7BdIvGulcJIkF21h5fxhuQUU0F4agQ/exec";
-  const scriptURL =
-    "";
+  const scriptURL = "https://script.google.com/macros/s/AKfycbz6OV_EFLa94cgTKK05m7b_-vmw0ubp0elfttI6_UqPHliRptvxmcSBInnfMXUPt_xX/exec";
 
   useEffect(() => {
     const form = document.forms["regist-form"];
 
-    const handleSubmit = async (e) => {
-      e.preventDefault();
-      setShowModal(true);
-      setCanClick(false);
-      setCountdown(5);
-
-      let count = 5;
-      const interval = setInterval(() => {
-        count -= 1;
-        setCountdown(count);
-
-        if (count <= 1) {
-          clearInterval(interval);
-          setCanClick(true);
-        }
-      }, 1000);
-    };
-
     if (form) {
-      form.addEventListener("submit", handleSubmit);
-    }
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+        setShowModal(true);
+        setCanClick(false);
+        setCountdown(5); // Set ulang countdown saat modal muncul
 
-    return () => {
-      if (form) {
-        form.removeEventListener("submit", handleSubmit); // hanya dipanggil jika form masih ada
-      }
-    };
+        let count = 5;
+        const interval = setInterval(() => {
+          count -= 1;
+          setCountdown(count);
+
+          if (count <= 1) {
+            clearInterval(interval); // Hentikan countdown di angka 1
+            setCanClick(true);
+          }
+        }, 1000);
+      };
+
+      form.addEventListener("submit", handleSubmit);
+      return () => {
+        form.removeEventListener("submit", handleSubmit);
+      };
+    }
   }, []);
 
   const handleConfirmSubmit = async () => {
@@ -118,13 +112,13 @@ function IndonesiaOnline() {
         setStatusMessage("Data berhasil dikirim!");
 
         // Ambil data sebelum reset
-        // const formData = {
-        //   namaLengkap: selectedMaxNamaLengkap,
-        //   projectTitle: selectedMaxProject,
-        //   category: selectedCategory,
-        //   categoryPrice: categoryPrice,
-        //   namasekolah: selectedNamaSekolah,
-        // };
+        const formData = {
+          namaLengkap: selectedMaxNamaLengkap,
+          projectTitle: selectedMaxProject,
+          category: selectedCategory,
+          categoryPrice: categoryPrice,
+          namasekolah: selectedNamaSekolah,
+        };
 
         form.reset();
         setTimeout(() => {
@@ -147,7 +141,6 @@ function IndonesiaOnline() {
 
   return (
     <>
-      <Navbar />
       <section className="registration-section">
         <div className="container">
           <div className="content">
@@ -156,7 +149,7 @@ function IndonesiaOnline() {
             <br />
             <br />
             <h4>
-              HALLO PESERTA NRTC 2025, Mohon perhatikan informasi berikut ini
+              HALLO PESERTA NRTC 2026, Mohon perhatikan informasi berikut ini
               sebelum mengisi formulir pendaftaran :
             </h4>
             <br />
@@ -179,7 +172,7 @@ function IndonesiaOnline() {
               alamat email team leader.
             </p>
             <br />
-            <br />
+
             {showModal && (
               <div className="modal-overlay-submit">
                 <div className="modal-submit text-lg-center text-md-center">
@@ -214,7 +207,7 @@ function IndonesiaOnline() {
 
             <form name="regist-form">
               <h1 className="text-sm md:text-lg lg:text-5xl">BIODATA</h1>
-              <span className="garis-bawah"></span>
+              <h1 className="garis-bawah"></h1>
               <div className="user-details">
                 <div className="input-box">
                   <label className="form-label">Kategori Peserta</label>
@@ -258,9 +251,9 @@ function IndonesiaOnline() {
                       diawal, dengan format seperti berikut :
                     </p>
                     <p>Note : maksimal 5 anggota + 1 ketua tim</p>
-                    <h6>Kamal Putra</h6>
-                    <h6>Ranu Ramadhan</h6>
-                    <h6>Irsyad Zaidan</h6>
+                    <h6>Kamal Putra Situmorang</h6>
+                    <h6>Eki Jordi Imam</h6>
+                    <h6>Irsyad Zaidan Kamil</h6>
                   </label>
                   <textarea
                     type="text"
@@ -317,7 +310,7 @@ function IndonesiaOnline() {
                     required
                   />
                 </div>
-                {/* <div className="input-box">
+                <div className="input-box">
                   <label for="NISN_NIM" className="form-label">
                     NISN / NIM Ketua & Anggota Tim
                   </label>
@@ -338,7 +331,7 @@ function IndonesiaOnline() {
                     placeholder="Masukan NISN / NIM Ketua & Anggota Tim"
                     required
                   ></textarea>
-                </div> */}
+                </div>
               </div>
 
               {/* DATA SEKOLAH START */}
@@ -357,7 +350,7 @@ function IndonesiaOnline() {
                       dengan format seperti berikut :
                     </p>
                     <h6>SMA CERIA</h6>
-                    <h6>HAPPY HIGH SCHOOL</h6>
+                    <h6>SMA BAHAGIA</h6>
                     <h6>SMA TADIKA MESRA</h6>
                   </label>
                   <textarea
@@ -374,7 +367,7 @@ function IndonesiaOnline() {
                     {selectedNamaSekolah.length} / {maxSchoolChars} karakter
                   </p>
                 </div>
-                {/* <div className="input-box">
+                <div className="input-box">
                   <label for="NPSN" className="form-label">
                     Nomor Pokok Sekolah Nasional (NPSN)
                   </label>
@@ -395,8 +388,8 @@ function IndonesiaOnline() {
                     className="form-control"
                     placeholder="Masukan Nomor Pokok Sekolah Nasional (NPSN)"
                   ></textarea>
-                </div> */}
-                {/* <div className="input-box">
+                </div>
+                <div className="input-box">
                   <label for="GRADE" className="form-label">
                     Jenjang Pendidikan{" "}
                   </label>
@@ -409,16 +402,16 @@ function IndonesiaOnline() {
                     required
                   >
                     <option value="">--Pilih Jenjang Pendidikan Anda--</option>
-                    <option value="Sekolah Dasar">Sekolah Dasar</option>
+                    {/* <option value="Sekolah Dasar">Sekolah Dasar</option>
                     <option value="Sekolah Menengah Pertama">
                       Sekolah Menengah Pertama
-                    </option>
+                    </option> */}
                     <option value="Sekolah Menengah Atas">
                       Sekolah Menengah Atas
                     </option>
                     <option value="Universitas">Universitas</option>
                   </select>
-                </div> */}
+                </div>
                 <div className="input-box">
                   <label for="PROVINCE" className="form-label">
                     Provinsi
@@ -456,6 +449,7 @@ function IndonesiaOnline() {
                     required
                   ></textarea>
                 </div>
+
                 <div className="input-box">
                   <label
                     for="WHATSAPP_NUMBER_SUPERVISOR"
@@ -492,15 +486,13 @@ function IndonesiaOnline() {
                 </div>
               </div>
               {/* DATA PEMBIMBING END */}
-              {/* DATA PEMBIMBING END */}
 
-              {/* DETAIL PROJECT START */}
               {/* DETAIL PROJECT START */}
               <div className="">
                 <h1 className="text-sm md:text-lg lg:text-5xl">
                   DETAIL PROYEK
                 </h1>
-                <span className="garis-bawah"></span>
+                <h1 className="garis-bawah"></h1>
               </div>
               <div className="user-details">
                 <div className="input-box">
@@ -535,6 +527,7 @@ function IndonesiaOnline() {
                     id="CATEGORIES"
                     name="CATEGORIES"
                     className="form-control"
+                    placeholder="--Choose-- "
                     required
                   >
                     <option value="">--Pilih Kategori--</option>
@@ -602,15 +595,13 @@ function IndonesiaOnline() {
                 </div>
               </div>
               {/* DETAIL PROJECT END */}
-              {/* DETAIL PROJECT END */}
 
-              {/* GENERAL INFORMATION START */}
               {/* GENERAL INFORMATION START */}
               <div className="">
                 <h1 className="text-sm md:text-lg lg:text-5xl">
                   INFORMASI UMUM
                 </h1>
-                <span className="garis-bawah"></span>
+                <h1 className="garis-bawah"></h1>
               </div>
               <div className="user-details">
                 <div className="input-box">
@@ -634,7 +625,7 @@ function IndonesiaOnline() {
                 </div>
                 <div className="input-box">
                   <label for="INFORMATION_RESOURCES" className="form-label">
-                    Sumber Informasi Kompetisi NRTC 2025
+                    Sumber Informasi Kompetisi NRTC 2026
                   </label>
                   <select
                     type="text"
@@ -675,10 +666,12 @@ function IndonesiaOnline() {
               </div>
               {/* GENERAL INFORMATION END */}
               {/* GENERAL INFORMATION END */}
+
               <div className="button">
-                <input type="submit" value="TUTUP PENDAFTARAN" />
+                <input type="submit" value="Submit" />
               </div>
             </form>
+
             {/* Loader dan Status Message */}
             {isLoading && (
               <div className="overlay-loader">

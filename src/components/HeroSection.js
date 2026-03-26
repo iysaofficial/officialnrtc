@@ -16,19 +16,17 @@ const HeroSection = () => {
           </p>
           <div className="main-hero-buttons">
             <a
-              href="https://drive.google.com/file/d/1FD4SoRz3ENzYAT-TSWpNFDl-5ngURgoP/view?usp=sharing"
+              href="https://drive.google.com/file/d/1-aUVKelb2Obx1URJi3Y-QUI2fmr-rmOc/view?usp=sharing"
               className="main-hero-btn"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Lihat Buku Panduan
+              Buku Panduan
             </a>
-            {/* <a href="/homeindo" className="main-hero-btn main-hero-btn-yellow">
+            <a href="/homeindo" className="main-hero-btn main-hero-btn-yellow">
               Daftar Sekarang!
-            </a> */}
-            <a href="/" className="main-hero-btn main-hero-btn-yellow">
-              Tutup Pendaftaran
             </a>
+      
           </div>
         </div>
       </div>

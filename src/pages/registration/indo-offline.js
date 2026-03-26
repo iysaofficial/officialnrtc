@@ -64,8 +64,7 @@ function IndonesiaOffline() {
     }
   }, [router]);
 
-  // const scriptURL = "https://script.google.com/macros/s/AKfycbxR6aOY46aM0sXWAIyCapZnVrCrqVstFh85I42aIsewruEL2T_ztZVF9RAhO_EnxzIpww/exec";
-  const scriptURL = "";
+  const scriptURL = "https://script.google.com/macros/s/AKfycbxRrYIEd8c9u3yYEjW2rNsD1TYXnXWYH618DkY0uVwcXpbnuYqj9aigHGn_XKMSTObp/exec";
 
   useEffect(() => {
     const form = document.forms["regist-form"];
@@ -150,7 +149,7 @@ function IndonesiaOffline() {
             <br />
             <br />
             <h4>
-              HALLO PESERTA NRTC 2025, Mohon perhatikan informasi berikut ini
+              HALLO PESERTA NRTC 2026, Mohon perhatikan informasi berikut ini
               sebelum mengisi formulir pendaftaran :
             </h4>
             <br />
@@ -259,9 +258,9 @@ function IndonesiaOffline() {
                       diawal, dengan format seperti berikut :
                     </p>
                     <p>Note : maksimal 5 anggota + 1 ketua tim</p>
-                    <h6>Kamal Putra</h6>
-                    <h6>Ranu Ramadhan</h6>
-                    <h6>Irsyad Zaidan</h6>
+                    <h6>Kamal Putra situmorang</h6>
+                    <h6>prasetya Adi zaidan</h6>
+                    <h6>Irsyad Zaidan Kamil</h6>
                   </label>
                   <textarea
                     type="text"
@@ -618,7 +617,7 @@ function IndonesiaOffline() {
                 </div>
                 <div className="input-box">
                   <label for="INFORMATION_RESOURCES" className="form-label">
-                    Sumber Informasi Kompetisi NRTC 2025
+                    Sumber Informasi Kompetisi NRTC 2026
                   </label>
                   <select
                     type="text"
@@ -662,7 +661,7 @@ function IndonesiaOffline() {
               {/* GENERAL INFORMATION END */}
               {/* GENERAL INFORMATION END */}
               <div className="button">
-                <input type="submit" value="TUTUP PENDAFTARAN" />
+                <input type="submit" value="SUBMIT" />
               </div>
             </form>
             {/* Loader dan Status Message */}
