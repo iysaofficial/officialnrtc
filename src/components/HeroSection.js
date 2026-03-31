@@ -15,14 +15,14 @@ const HeroSection = () => {
             Daftarkan dirimu dan tim untuk berkompetisi, berbagi inovasi, serta memperluas jejaring bersama rekan terbaik dari seluruh Indonesia.<br />
           </p>
           <div className="main-hero-buttons">
-            <a
+            {/* <a
               href="https://drive.google.com/file/d/1-aUVKelb2Obx1URJi3Y-QUI2fmr-rmOc/view?usp=sharing"
               className="main-hero-btn"
               target="_blank"
               rel="noopener noreferrer"
             >
               Buku Panduan
-            </a>
+            </a> */}
             <button type="button" className="main-hero-btn main-hero-btn-yellow">
               Tutup Pendaftaran!
             </button>
