@@ -23,9 +23,9 @@ const HeroSection = () => {
             >
               Buku Panduan
             </a>
-            <a href="#" className="main-hero-btn main-hero-btn-yellow">
+            <button type="button" className="main-hero-btn main-hero-btn-yellow">
               Tutup Pendaftaran!
-            </a>
+            </button>
       
           </div>
         </div>
