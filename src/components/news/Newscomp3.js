@@ -52,7 +52,7 @@ const Newscomp3 = () => {
             Hongkong, Malaysia, Iran, Meksiko, Rumania, dan Indonesia. Kegiatan
             ini sifatnya kompetisi yang memang nanti akan memperoleh medali
             emas, perak dan perunggu dan hadiah lain dari penyelenggara.
-            “Kategori yang dikompetisikan adalah life science, phisik and
+            “Kategori yang dikompetisikan adalah life sciences, phisik and
             engeenering, pendidikan dan education, ada science dan ada beberapa
             bidang lainnya,” katanya. There were 28 participants from overseas.
           </p>

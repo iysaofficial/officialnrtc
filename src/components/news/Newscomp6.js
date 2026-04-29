@@ -54,7 +54,7 @@ const Newscomp6 = () => {
             Malaysia, Iran, Mexico, Romania, and Indonesia. This activity This
             activity is a competition that will indeed earn medals gold, silver
             and bronze medals and other prizes from the organisers. "The
-            categories competed are life science, physics and engineering,
+            categories competed are life sciences, physics and engineering,
             education, science and several other fields," he said. other
             fields," he said. There were 28 participants from overseas.
           </p>

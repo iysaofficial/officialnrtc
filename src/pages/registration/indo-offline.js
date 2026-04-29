@@ -539,7 +539,7 @@ function IndonesiaOffline() {
                   >
                     <option value="">--Pilih Kategori--</option>
                     <option value="Sustainability Development">Sustainability Development</option>
-                    <option value="Life Science">Life Science</option>
+                    <option value="Life Sciences">Life Sciences</option>
                     <option value="Engineering">Engineering</option>
                     <option value="Education">Education</option>
                     <option value="Environmental">Environmental</option>

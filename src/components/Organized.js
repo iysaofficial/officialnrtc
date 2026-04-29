@@ -16,15 +16,15 @@ const Organized = () => {
                   alt="gallery"
                 />
                 <img
-                  src="./assets/img/logo/vokasi.png"
-                  className="ms-1 col-3 image-vokasi"
+                  src="./assets/img/logo/Logo UI-11.png"
+                  className="ms-5 col-2 image-vokasi"
                   alt="gallery"
                 />
-                <img
+                {/* <img
                   src="./assets/img/logo/IZMIR IISEEF.png"
                   className="ms-1 col-3 image-vokasi"
                   alt="gallery"
-                />
+                /> */}
               </div>
             </div>
           </div>

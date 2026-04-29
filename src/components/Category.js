@@ -21,7 +21,7 @@ const Category = () => {
               className="gallery-item mt-4"
               alt="gallery"
             />
-            <h5 className="text-center mt-5">Life Science</h5>
+            <h5 className="text-center mt-5">Life Sciences</h5>
           </div>
           <div className="col text-center mx-auto">
             <img
