@@ -130,7 +130,7 @@ const Navbar = () => {
             </li>
             <li className="menu-item menu-item-has-children">
               <a
-                href="https://drive.google.com/file/d/1FD4SoRz3ENzYAT-TSWpNFDl-5ngURgoP/view?usp=sharing"
+                href="https://drive.google.com/drive/folders/1OnbHFulrSRrVx3SSEAoxxqw0h6Jr8g5l?usp=sharing"
                 target="_blank"
                 rel="noreferrer noopener"
               >

@@ -15,17 +15,20 @@ const HeroSection = () => {
             Daftarkan dirimu dan tim untuk berkompetisi, berbagi inovasi, serta memperluas jejaring bersama rekan terbaik dari seluruh Indonesia.<br />
           </p>
           <div className="main-hero-buttons">
-            {/* <a
-              href="https://drive.google.com/file/d/1-aUVKelb2Obx1URJi3Y-QUI2fmr-rmOc/view?usp=sharing"
-              className="main-hero-btn"
+            <a
+              href="https://drive.google.com/drive/folders/1OnbHFulrSRrVx3SSEAoxxqw0h6Jr8g5l?usp=sharing"
+              className="main-hero-btn main-hero-btn-blue"
               target="_blank"
               rel="noopener noreferrer"
             >
               Buku Panduan
-            </a> */}
+            </a>
+
+            <a href="/homeindo">
             <button type="button" className="main-hero-btn main-hero-btn-yellow">
-              Tutup Pendaftaran!
+              Daftar Sekarang !
             </button>
+            </a>
       
           </div>
         </div>

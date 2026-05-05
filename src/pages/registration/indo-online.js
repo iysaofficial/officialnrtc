@@ -360,7 +360,7 @@ function IndonesiaOnline() {
                     {selectedNamaSekolah.length} / {maxSchoolChars} karakter
                   </p>
                 </div>
-                <div className="input-box">
+                {/* <div className="input-box">
                   <label for="NPSN" className="form-label">
                     Nomor Pokok Sekolah Nasional (NPSN)
                   </label>
@@ -395,16 +395,16 @@ function IndonesiaOnline() {
                     required
                   >
                     <option value="">--Pilih Jenjang Pendidikan Anda--</option>
-                    {/* <option value="Sekolah Dasar">Sekolah Dasar</option>
+                    <option value="Sekolah Dasar">Sekolah Dasar</option>
                     <option value="Sekolah Menengah Pertama">
                       Sekolah Menengah Pertama
-                    </option> */}
+                    </option>
                     <option value="Sekolah Menengah Atas">
                       Sekolah Menengah Atas
                     </option>
                     <option value="Universitas">Universitas</option>
                   </select>
-                </div>
+                </div> */}
                 <div className="input-box">
                   <label for="PROVINCE" className="form-label">
                     Provinsi
