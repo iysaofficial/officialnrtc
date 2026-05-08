@@ -55,7 +55,7 @@ function HomeIndo() {
                 handleOpenModal("/indo-online", indonesiaOnlineTerms)
               }
             >
-              Kompetisi Online<i className="fa-solid fa-earth-americas"></i>
+              Kompetisi Daring<i className="fa-solid fa-earth-americas"></i>
             </button>
             {/* <a
               className="btn-regist btn-action text-center me-lg-5 m-2"
@@ -71,7 +71,7 @@ function HomeIndo() {
                 handleOpenModal("/indo-offline", indonesiaOfflineTerms)
               }
             >
-              Kompetisi Offline<i className="fa-solid fa-earth-americas"></i>
+              Kompetisi Luring<i className="fa-solid fa-earth-americas"></i>
             </button>
           </div>
         </div>

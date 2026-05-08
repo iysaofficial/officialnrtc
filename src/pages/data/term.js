@@ -2,7 +2,7 @@ export const indonesiaOnlineTerms = (
   <>
     <h5>
       Sebelum melanjutkan, harap membaca dan menyetujui syarat & ketentuan
-      berikut untuk Peserta Online:
+      berikut untuk Peserta Daring:
     </h5>
     {/* <h1 className="">Peserta Online:</h1> */}
     <ul>
@@ -39,7 +39,7 @@ export const indonesiaOfflineTerms = (
   <>
     <h5>
       Sebelum melanjutkan, harap membaca dan menyetujui syarat & ketentuan
-      berikut untuk Peserta Offline:
+      berikut untuk Peserta Luring:
     </h5>
     <ul>
       <li>

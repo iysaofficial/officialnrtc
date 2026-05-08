@@ -227,7 +227,7 @@ function IndonesiaOnline() {
                   >
                     <option value="">--Pilih Kategori Kompetisi--</option>
                     <option value="National Research Teacher Competition - Online Competition">
-                      Online Competition
+                      Kategori Daring
                     </option>
                   </select>
                 </div>
@@ -661,7 +661,7 @@ function IndonesiaOnline() {
               {/* GENERAL INFORMATION END */}
 
               <div className="button">
-                <input type="submit" value="Submit" />
+                <input type="submit" value="KIRIM" />
               </div>
             </form>
 
