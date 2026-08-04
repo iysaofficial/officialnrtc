@@ -49,7 +49,7 @@ function IndonesiaOnline() {
     // Logika untuk menentukan harga berdasarkan kategori yang dipilih
     switch (value) {
       case "National Research Teacher Competition - Online Competition":
-        setCategoryPrice("RP 900.000");
+        setCategoryPrice("RP 1.150.000");
         break;
       default:
         break;
@@ -64,7 +64,8 @@ function IndonesiaOnline() {
     }
   }, [navigate]);
 
-  const scriptURL = "https://script.google.com/macros/s/AKfycbz6OV_EFLa94cgTKK05m7b_-vmw0ubp0elfttI6_UqPHliRptvxmcSBInnfMXUPt_xX/exec";
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbz6OV_EFLa94cgTKK05m7b_-vmw0ubp0elfttI6_UqPHliRptvxmcSBInnfMXUPt_xX/exec";
 
   useEffect(() => {
     const form = document.forms["regist-form"];
@@ -111,15 +112,13 @@ function IndonesiaOnline() {
       if (response.ok) {
         setStatusMessage("Data berhasil dikirim!");
 
-
-
         form.reset();
         setTimeout(() => {
           navigate(
             `/thankyou?namaLengkap=${encodeURIComponent(selectedMaxNamaLengkap)}
             &projectTitle=${encodeURIComponent(selectedMaxProject)}
             &category=${encodeURIComponent(selectedCategory)}
-            &namasekolah=${encodeURIComponent(selectedNamaSekolah)}`
+            &namasekolah=${encodeURIComponent(selectedNamaSekolah)}`,
           );
         }, 1000);
       } else {
@@ -190,8 +189,8 @@ function IndonesiaOnline() {
                       {isLoading
                         ? "Mengirim..."
                         : canClick
-                        ? "Lanjutkan"
-                        : `Tunggu... ${countdown}`}
+                          ? "Lanjutkan"
+                          : `Tunggu... ${countdown}`}
                     </button>
                   </div>
                 </div>

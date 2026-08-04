@@ -13,6 +13,7 @@ function IndonesiaOffline() {
   const maxSchoolChars = 500; // batasan maksimal karakter
   const maxProjectChars = 160; // batasan maksimal karakter
   const [selectedCategory, setSelectedCategory] = useState("");
+  const [categoryPrice, setCategoryPrice] = useState("");
   const [statusMessage, setStatusMessage] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -48,8 +49,10 @@ function IndonesiaOffline() {
     // Logika untuk menentukan harga berdasarkan kategori yang dipilih
     switch (value) {
       case "National Research Teacher Competition - Offline Competition":
+        setCategoryPrice("Rp. 3.150.000");
         break;
       case "National Research Teacher Competition - Offline Competition + Excursion":
+        setCategoryPrice("");
         break;
       default:
         break;
@@ -64,7 +67,8 @@ function IndonesiaOffline() {
     }
   }, [router]);
 
-  const scriptURL = "https://script.google.com/macros/s/AKfycbxRrYIEd8c9u3yYEjW2rNsD1TYXnXWYH618DkY0uVwcXpbnuYqj9aigHGn_XKMSTObp/exec";
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbxRrYIEd8c9u3yYEjW2rNsD1TYXnXWYH618DkY0uVwcXpbnuYqj9aigHGn_XKMSTObp/exec";
 
   useEffect(() => {
     const form = document.forms["regist-form"];
@@ -125,7 +129,7 @@ function IndonesiaOffline() {
             `/thankyou?namaLengkap=${encodeURIComponent(selectedMaxNamaLengkap)}
             &projectTitle=${encodeURIComponent(selectedMaxProject)}
             &category=${encodeURIComponent(selectedCategory)}
-            &namasekolah=${encodeURIComponent(selectedNamaSekolah)}`
+            &namasekolah=${encodeURIComponent(selectedNamaSekolah)}`,
           );
         }, 1000);
       } else {
@@ -197,8 +201,8 @@ function IndonesiaOffline() {
                       {isLoading
                         ? "Mengirim..."
                         : canClick
-                        ? "Lanjutkan"
-                        : `Tunggu... ${countdown}`}
+                          ? "Lanjutkan"
+                          : `Tunggu... ${countdown}`}
                     </button>
                   </div>
                 </div>
@@ -500,7 +504,7 @@ function IndonesiaOffline() {
                 <h1 className="text-sm md:text-lg lg:text-5xl">
                   DETAIL PROYEK
                 </h1>
-                 <span className="garis-bawah"></span>
+                <span className="garis-bawah"></span>
               </div>
               <div className="user-details">
                 <div className="input-box">
@@ -538,7 +542,9 @@ function IndonesiaOffline() {
                     required
                   >
                     <option value="">--Pilih Kategori--</option>
-                    <option value="Sustainability Development">Sustainability Development</option>
+                    <option value="Sustainability Development">
+                      Sustainability Development
+                    </option>
                     <option value="Life Sciences">Life Sciences</option>
                     <option value="Engineering">Engineering</option>
                     <option value="Education">Education</option>
@@ -582,6 +588,21 @@ function IndonesiaOffline() {
                     placeholder="Masukan Nama Kompetisinya"
                   ></textarea>
                   <div className="mt-5" id="form_alerts"></div>
+                </div>
+                {/* Kolom Harga */}
+                <div className="input-box invisible">
+                  <label htmlFor="CATEGORY_PRICE" className="form-label ">
+                    Registration Price
+                  </label>
+                  <input
+                    type="text"
+                    id="CATEGORY_PRICE"
+                    name="CATEGORY_PRICE"
+                    className="form-control"
+                    value={categoryPrice}
+                    readOnly
+                    placeholder="Harga akan muncul berdasarkan kategori yang dipilih"
+                  />
                 </div>
               </div>
               {/* DETAIL PROJECT END */}
@@ -627,9 +648,7 @@ function IndonesiaOffline() {
                     placeholder="--Memilih Sumber Daya Informasi--"
                     required
                   >
-                    <option value="">
-                      --Pilih Sumber Informasi--
-                    </option>
+                    <option value="">--Pilih Sumber Informasi--</option>
                     <option value="NRTC Website">NRTC Website</option>
                     <option value="IYSA Instagram">IYSA Instagram</option>
                     <option value="NRTC Instagram">NRTC Instagram</option>
