@@ -242,7 +242,7 @@ function IndonesiaOnline() {
                       Masukan nama ketua dan anggota tim dengan nama ketua tim
                       diawal, dengan format seperti berikut :
                     </p>
-                    <p>Note : maksimal 5 anggota + 1 ketua tim</p>
+                    <p>Note : maksimal 2 anggota + 1 ketua tim</p>
                     <h6>Kamal Putra Situmorang</h6>
                     <h6>Eki Jordi Imam</h6>
                     <h6>Irsyad Zaidan Kamil</h6>
@@ -302,7 +302,7 @@ function IndonesiaOnline() {
                     required
                   />
                 </div>
-                <div className="input-box">
+                {/* <div className="input-box">
                   <label for="NISN_NIM" className="form-label">
                     NISN / NIM Ketua & Anggota Tim
                   </label>
@@ -323,7 +323,7 @@ function IndonesiaOnline() {
                     placeholder="Masukan NISN / NIM Ketua & Anggota Tim"
                     required
                   ></textarea>
-                </div>
+                </div> */}
               </div>
 
               {/* DATA SEKOLAH START */}
@@ -423,10 +423,10 @@ function IndonesiaOnline() {
 
               {/* DATA PEMBIMBING START */}
               {/* DATA PEMBIMBING START */}
-              <h1 className="text-sm md:text-lg lg:text-5xl">
+              {/* <h1 className="text-sm md:text-lg lg:text-5xl">
                 DATA PEMBIMBING
-              </h1>
-              <span className="garis-bawah"></span>
+              </h1> */}
+              {/* <span className="garis-bawah"></span>
               <div className="user-details">
                 <div className="input-box">
                   <label for="NAME_SUPERVISOR" className="form-label">
@@ -476,7 +476,7 @@ function IndonesiaOnline() {
                     required
                   />
                 </div>
-              </div>
+              </div> */}
               {/* DATA PEMBIMBING END */}
 
               {/* DETAIL PROJECT START */}

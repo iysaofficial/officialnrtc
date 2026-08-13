@@ -261,7 +261,7 @@ function IndonesiaOffline() {
                       Masukan nama ketua dan anggota tim dengan nama ketua tim
                       diawal, dengan format seperti berikut :
                     </p>
-                    <p>Note : maksimal 5 anggota + 1 ketua tim</p>
+                    <p>Note : maksimal 2 anggota + 1 ketua tim</p>
                     <h6>Kamal Putra situmorang</h6>
                     <h6>prasetya Adi zaidan</h6>
                     <h6>Irsyad Zaidan Kamil</h6>
@@ -442,10 +442,10 @@ function IndonesiaOffline() {
 
               {/* DATA PEMBIMBING START */}
               {/* DATA PEMBIMBING START */}
-              <h1 className="text-sm md:text-lg lg:text-5xl">
+              {/* <h1 className="text-sm md:text-lg lg:text-5xl">
                 DATA PEMBIMBING
-              </h1>
-              <span className="garis-bawah"></span>
+              </h1> */}
+              {/* <span className="garis-bawah"></span>
               <span className="user-details">
                 <div className="input-box">
                   <label for="NAME_SUPERVISOR" className="form-label">
@@ -494,7 +494,7 @@ function IndonesiaOffline() {
                     required
                   />
                 </div>
-              </span>
+              </span> */}
               {/* DATA PEMBIMBING END */}
               {/* DATA PEMBIMBING END */}
 
