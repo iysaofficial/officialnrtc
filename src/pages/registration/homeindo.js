@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import { indonesiaOnlineTerms, indonesiaOfflineTerms } from "../data/term";
 import Navbar from "../../components/nrtc/Navbar";
