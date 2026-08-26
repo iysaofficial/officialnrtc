@@ -49,13 +49,20 @@ function HomeIndo() {
             </div>
           </div>
           <div className="link-web mx-auto text-center">
-            <button
+            {/* <button
               className="btn-regist btn-action text-center me-lg-5 m-2"
               onClick={() =>
                 handleOpenModal("/indo-online", indonesiaOnlineTerms)
               }
             >
               Kompetisi Daring<i className="fa-solid fa-earth-americas"></i>
+            </button> */}
+            <button
+              className="btn-regist btn-action text-center me-lg-5 m-2"
+              disabled
+              style={{ cursor: "not-allowed" }}
+            >
+              Coming Soon 2027<i className="fa-solid fa-earth-americas"></i>
             </button>
             {/* <a
               className="btn-regist btn-action text-center me-lg-5 m-2"
@@ -65,13 +72,20 @@ function HomeIndo() {
             >
               Tutup Pendaftaran <i className="fa-solid fa-earth-americas"></i>
             </a> */}
-            <button
+            {/* <button
               className="btn-regist btn-action text-center me-lg-5 m-2"
               onClick={() =>
                 handleOpenModal("/indo-offline", indonesiaOfflineTerms)
               }
             >
               Kompetisi Luring<i className="fa-solid fa-earth-americas"></i>
+            </button> */}
+            <button
+              className="btn-regist btn-action text-center me-lg-5 m-2"
+              disabled
+              style={{ cursor: "not-allowed" }}
+            >
+              Coming Soon 2027<i className="fa-solid fa-earth-americas"></i>
             </button>
           </div>
         </div>

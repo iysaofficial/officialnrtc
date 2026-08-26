@@ -24,11 +24,14 @@ const HeroSection = () => {
               Buku Panduan
             </a>
 
-            <a href="/homeindo">
+            {/* <a href="/homeindo">
             <button type="button" className="main-hero-btn main-hero-btn-yellow">
               Daftar Sekarang !
             </button>
-            </a>
+            </a> */}
+            <button type="button" className="main-hero-btn main-hero-btn-yellow" disabled style={{ cursor: "not-allowed" }}>
+              Coming Soon 2027
+            </button>
       
           </div>
         </div>
