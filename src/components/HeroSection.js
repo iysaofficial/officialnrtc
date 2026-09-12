@@ -12,7 +12,9 @@ const HeroSection = () => {
         <div className="main-hero-content">
           <h1>National Research Teacher Competition</h1>
           <p>
-            Daftarkan dirimu dan tim untuk berkompetisi, berbagi inovasi, serta memperluas jejaring bersama rekan terbaik dari seluruh Indonesia.<br />
+            Daftarkan dirimu dan tim untuk berkompetisi, berbagi inovasi, serta
+            memperluas jejaring bersama rekan terbaik dari seluruh Indonesia.
+            <br />
           </p>
           <div className="main-hero-buttons">
             <a
@@ -29,10 +31,14 @@ const HeroSection = () => {
               Daftar Sekarang !
             </button>
             </a> */}
-            <button type="button" className="main-hero-btn main-hero-btn-yellow" disabled style={{ cursor: "not-allowed" }}>
-              Coming Soon 2027
+            <button
+              type="button"
+              className="main-hero-btn main-hero-btn-yellow"
+              disabled
+              style={{ cursor: "not-allowed" }}
+            >
+              Registrasi Ditutup
             </button>
-      
           </div>
         </div>
       </div>
