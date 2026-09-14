@@ -16,8 +16,8 @@ const Organized = () => {
                   alt="gallery"
                 />
                 <img
-                  src="./assets/img/logo/Logo UI-11.png"
-                  className="ms-5 col-2 image-vokasi"
+                  src="./assets/img/logo/Logo FMIPA UI-10.png"
+                  className="ms-5 col-2 image-ui"
                   alt="gallery"
                 />
                 {/* <img
