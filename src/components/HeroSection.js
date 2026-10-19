@@ -37,7 +37,7 @@ const HeroSection = () => {
               disabled
               style={{ cursor: "not-allowed" }}
             >
-              Registrasi Ditutup
+              Segera Hadir 2027
             </button>
           </div>
         </div>

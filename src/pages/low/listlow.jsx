@@ -4,8 +4,14 @@ import Footers from "../../components/nrtc/Footers";
 function ListLow() {
   const winners = [
     {
-      year: 2025,
+      year: 2026,
       color: "warning",
+      link: "/list2026",
+      external: true,
+    },
+    {
+      year: 2025,
+      color: "primary",
       link: "/list2025",
       external: true,
     },

@@ -18,7 +18,7 @@ import Thankyou from './pages/registration/thankyou';
 import ListLow from './pages/low/listlow'
 import List2024 from './pages/low/2024/list2024'
 import List2025 from './pages/low//2025/list2025'
-
+import List2026 from './pages/low/2026/list2026'
 
 import {
   BrowserRouter as Router,
@@ -44,6 +44,7 @@ function App() {
           <Route path='/listlow' element={<ListLow />} />
           <Route path='/list2024' element={<List2024 />} />
           <Route path='/list2025' element={<List2025 />} />
+          <Route path='/list2026' element={<List2026 />} />
         </Routes>
       </Router>
     </>
