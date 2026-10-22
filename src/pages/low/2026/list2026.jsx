@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Navbar from "../../../components/nrtc/Navbar";
 import Footer from "../../../components/nrtc/Footers";
 
-
 export default function List2026() {
   const [mode, setMode] = useState("online"); // "online" or "offline"
 
@@ -12,10 +11,10 @@ export default function List2026() {
       driveLink: {
         online:
           "https://drive.google.com/file/d/1v0RPIIusveQFMECrGeBZHO4C4zMgV93a/view?usp=sharing",
-        offline: ""
-        
+        offline:
+          "https://drive.google.com/file/d/1XMEIxnJL9Iwd3vZGf4Ukuld58zB2W-X3/view?usp=sharing",
       },
-    }
+    },
   ];
 
   return (
@@ -93,7 +92,6 @@ export default function List2026() {
             );
           })}
         </div>
-        
       </div>
       <Footer />
     </>

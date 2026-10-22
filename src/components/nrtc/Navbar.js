@@ -13,7 +13,7 @@ const Navbar = () => {
 
   const collapseSubMenu = useCallback(() => {
     const activeSubMenu = document.querySelector(
-      ".menu-item-has-children.active .sub-menu"
+      ".menu-item-has-children.active .sub-menu",
     );
     if (activeSubMenu) {
       activeSubMenu.removeAttribute("style");
@@ -118,11 +118,7 @@ const Navbar = () => {
               <p data-toggle="sub-menu">Daftar Pemenang</p>
               <ul className="sub-menu text-center">
                 <li className="menu-item">
-                  <a
-                    href="listlow"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
+                  <a href="listlow" target="_blank" rel="noreferrer noopener">
                     Daftar Pemenang
                   </a>
                 </li>
@@ -140,6 +136,15 @@ const Navbar = () => {
             <li className="menu-item menu-item-has-children">
               <p data-toggle="sub-menu">Galeri</p>
               <ul className="sub-menu text-center">
+                <li className="menu-item">
+                  <a
+                    href="https://drive.google.com/drive/folders/1VB4NwdBTuKipGVEbYv9wfgEWEQO5Q75H?usp=sharing"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
+                    Galeri 2026
+                  </a>
+                </li>
                 <li className="menu-item">
                   <a
                     href="https://drive.google.com/drive/folders/1p-oWDrc1b9JgqGjVkgZ3tWzin0SCTDed?usp=sharing"
@@ -202,6 +207,15 @@ const Navbar = () => {
                 <li className="menu-item">
                   <a href="/News2" rel="noreferrer noopener">
                     Berita dari Media
+                  </a>
+                </li>
+                <li className="menu-item">
+                  <a
+                    href="https://drive.google.com/file/d/1C0SB63mLWtS1yTSbt3ET9FvFmswDLJiJ/view?usp=sharing"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
+                    Pesan Siaran 2026
                   </a>
                 </li>
                 <li className="menu-item">
