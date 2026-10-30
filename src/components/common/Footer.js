@@ -1,15 +1,15 @@
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
+
 const Footer = () => {
   return (
     <footer>
       <div className="rowFooter">
         <div className="colFooter">
           <img
-            src="./assets/img/logo/NRTC PNG.WebP"
+            src="/assets/img/logo/NRTC PNG.WebP"
             alt="Footer Logo"
             className="logoFooter"
-          ></img>
+          />
           <p className="rata-kirkan">
             Kemampuan guru untuk mengembangkan produk inovatif harus didukung
             oleh kemampuan guru untuk mempresentasikan produk tersebut di depan
@@ -28,23 +28,23 @@ const Footer = () => {
             Jl. Kemang, Pasir Putih, Kecamatan. Sawangan, Kota Depok, Jawa Barat
             16519
           </a>
-          <br></br>
-          <br></br>
+          <br />
+          <br />
           <a
             href="mailto:youngscientist.iysa@gmail.com"
             rel="noreferrer noopener"
             target="_blank"
-            className="office "
+            className="office"
           >
             youngscientist.iysa@gmail.com
           </a>
-          <br></br>
-          <br></br>
+          <br />
+          <br />
           <a
             href="https://wa.me/+6288213248890"
-            rel='noreferrer noopener'
+            rel="noreferrer noopener"
             target="_blank"
-            className="office "
+            className="office"
           >
             +62 882 1324 8890
           </a>
@@ -56,10 +56,10 @@ const Footer = () => {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="#faqs">FAQ</a>
+              <a href="/#faqs">FAQ</a>
             </li>
             <li>
-              <a href="#conts">Contact Us</a>
+              <a href="/#conts">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -71,4 +71,6 @@ const Footer = () => {
     </footer>
   );
 };
+
 export default Footer;
+

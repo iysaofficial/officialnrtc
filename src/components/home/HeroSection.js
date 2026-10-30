@@ -5,10 +5,10 @@ const HeroSection = () => {
     <section
       className="main-hero"
       style={{
-        background: "url('../assets/img/bg.png') no-repeat center center",
+        background: "url('/assets/img/bg.png') no-repeat center center",
       }}
     >
-      <div className="main-hero-overlay ">
+      <div className="main-hero-overlay">
         <div className="main-hero-content">
           <h1>National Research Teacher Competition</h1>
           <p>
@@ -26,11 +26,6 @@ const HeroSection = () => {
               Buku Panduan
             </a>
 
-            {/* <a href="/homeindo">
-            <button type="button" className="main-hero-btn main-hero-btn-yellow">
-              Daftar Sekarang !
-            </button>
-            </a> */}
             <button
               type="button"
               className="main-hero-btn main-hero-btn-yellow"
@@ -47,3 +42,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+

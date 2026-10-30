@@ -1,139 +1,12 @@
-export const Faq = (props) => {
-  return (
-    <>
-      <section id="faqs" className="faq-section">
-        <div id="faq" className="faq container">
-          <h2 class="text-center mb-3">FAQ</h2>
+import React from "react";
 
-          <div className="row">
-            <div className="faq-title text-center">
-              <h2>Setelah Mendaftar</h2>
-            </div>
-
-            <div className="col-md-12">
-              <div className="faq" id="accordion">
-                {data.map((item, i) => (
-                  <div className="card">
-                    <div className="card-header" id="faqHeading-1">
-                      <div className="mb-0">
-                        <h5
-                          className="faq-title"
-                          data-bs-toggle="collapse"
-                          data-bs-target={item.datatarget}
-                          data-aria-expanded="true"
-                          data-aria-controls="faqCollapse-1"
-                        >
-                          <span className="badge">{item.no}</span>
-                          {item.question}
-                        </h5>
-                      </div>
-                    </div>
-                    <div
-                      id={item.id}
-                      class="collapse"
-                      aria-labelledby="faqHeading-1"
-                      data-parent="#accordion"
-                    >
-                      <div className="card-body">
-                        <p>{item.answer}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="faq-title text-center pb-3">
-              <br />
-              <br />
-              <h2>Selama event berlangsung</h2>
-            </div>
-
-            <div className="col-md-12">
-              <div className="faq" id="accordion">
-                {data2.map((item, i) => (
-                  <div className="card">
-                    <div className="card-header" id="faqHeading-1">
-                      <div className="mb-0">
-                        <h5
-                          className="faq-title"
-                          data-bs-toggle="collapse"
-                          data-bs-target={item.datatarget}
-                          data-aria-expanded="true"
-                          data-aria-controls="faqCollapse-during-1"
-                        >
-                          <span className="badge">{item.no}</span>
-                          {item.question}
-                        </h5>
-                      </div>
-                    </div>
-                    <div
-                      id={item.id}
-                      class="collapse"
-                      aria-labelledby="faqHeading-1"
-                      data-parent="#accordion"
-                    >
-                      <div className="card-body">
-                        <p>{item.answer}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="faq-title text-center pb-3">
-              <br />
-              <br />
-              <h2>Setelah Acara</h2>
-            </div>
-
-            <div className="col-md-12">
-              <div className="faq" id="accordion">
-                {data3.map((item, i) => (
-                  <div className="card">
-                    <div className="card-header" id="faqHeading-1">
-                      <div className="mb-0">
-                        <h5
-                          className="faq-title"
-                          data-bs-toggle="collapse"
-                          data-bs-target={item.datatarget}
-                          data-aria-expanded="true"
-                          data-aria-controls="faqCollapse-After-2"
-                        >
-                          <span className="badge">{item.no}</span>
-                          {item.question}
-                        </h5>
-                      </div>
-                    </div>
-                    <div
-                      id={item.id}
-                      class="collapse"
-                      aria-labelledby="faqHeading-1"
-                      data-parent="#accordion"
-                    >
-                      <div className="card-body">
-                        <p>{item.answer}</p>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
-  );
-};
-export default Faq;
-
-const data = [
+const dataAfterRegister = [
   {
     no: "1",
     datatarget: "#faqCollapse-1",
     id: "faqCollapse-1",
-    question: "Minsa, kapan kami akan mendapatkan LoA kami? Ke mana akan dikirim?",
+    question:
+      "Minsa, kapan kami akan mendapatkan LoA kami? Ke mana akan dikirim?",
     answer:
       "Setelah kami menerima pendaftaran Anda, kami akan mengirimkan email konfirmasi dalam waktu 1X24 jam, dan untuk LoA kami akan mengirimkannya ke alamat email ketua tim dalam waktu 3X24 jam setelah pendaftaran.",
   },
@@ -191,7 +64,7 @@ const data = [
   },
 ];
 
-const data2 = [
+const dataDuringEvent = [
   {
     no: "1",
     datatarget: "#faqCollapse-during-1",
@@ -221,7 +94,8 @@ const data2 = [
     no: "4",
     datatarget: "#faqCollapse-during-4",
     id: "faqCollapse-during-4",
-    question: "berapa banyak akun zoom yang dapat bergabung dan apa yang harus saya tetapkan sebagai nama saya",
+    question:
+      "berapa banyak akun zoom yang dapat bergabung dan apa yang harus saya tetapkan sebagai nama saya",
     answer:
       'Anda dapat masuk ke Zoom dengan maksimal 5 akun peserta, dan semua akun Zoom harus mengikuti format nama yang telah kami sediakan, yaitu "Nomor Ruangan_Nama Ketua Tim_Nama Institusi.',
   },
@@ -251,7 +125,7 @@ const data2 = [
   },
 ];
 
-const data3 = [
+const dataAfterEvent = [
   {
     no: "1",
     datatarget: "#faqCollapse-After-1",
@@ -297,7 +171,136 @@ const data3 = [
     datatarget: "#faqCollapse-After-6",
     id: "faqCollapse-After-6",
     question: "Bagaimana cara melakukan penggandaan medali?",
-    answer:
-      "Bagaimana cara melakukan penggandaan medali?.",
+    answer: "Bagaimana cara melakukan penggandaan medali?.",
   },
 ];
+
+export const FaqSection = () => {
+  return (
+    <section id="faqs" className="faq-section">
+      <div id="faq" className="faq container">
+        <h2 className="text-center mb-3">FAQ</h2>
+
+        <div className="row">
+          <div className="faq-title text-center">
+            <h2>Setelah Mendaftar</h2>
+          </div>
+
+          <div className="col-md-12">
+            <div className="faq" id="accordion">
+              {dataAfterRegister.map((item) => (
+                <div className="card" key={item.id}>
+                  <div className="card-header" id={`heading-${item.id}`}>
+                    <div className="mb-0">
+                      <h5
+                        className="faq-title"
+                        data-bs-toggle="collapse"
+                        data-bs-target={item.datatarget}
+                        data-aria-expanded="true"
+                        data-aria-controls={item.id}
+                      >
+                        <span className="badge">{item.no}</span>
+                        {item.question}
+                      </h5>
+                    </div>
+                  </div>
+                  <div
+                    id={item.id}
+                    className="collapse"
+                    aria-labelledby={`heading-${item.id}`}
+                    data-parent="#accordion"
+                  >
+                    <div className="card-body">
+                      <p>{item.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="faq-title text-center pb-3">
+            <br />
+            <br />
+            <h2>Selama event berlangsung</h2>
+          </div>
+
+          <div className="col-md-12">
+            <div className="faq" id="accordion">
+              {dataDuringEvent.map((item) => (
+                <div className="card" key={item.id}>
+                  <div className="card-header" id={`heading-${item.id}`}>
+                    <div className="mb-0">
+                      <h5
+                        className="faq-title"
+                        data-bs-toggle="collapse"
+                        data-bs-target={item.datatarget}
+                        data-aria-expanded="true"
+                        data-aria-controls={item.id}
+                      >
+                        <span className="badge">{item.no}</span>
+                        {item.question}
+                      </h5>
+                    </div>
+                  </div>
+                  <div
+                    id={item.id}
+                    className="collapse"
+                    aria-labelledby={`heading-${item.id}`}
+                    data-parent="#accordion"
+                  >
+                    <div className="card-body">
+                      <p>{item.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="faq-title text-center pb-3">
+            <br />
+            <br />
+            <h2>Setelah Acara</h2>
+          </div>
+
+          <div className="col-md-12">
+            <div className="faq" id="accordion">
+              {dataAfterEvent.map((item) => (
+                <div className="card" key={item.id}>
+                  <div className="card-header" id={`heading-${item.id}`}>
+                    <div className="mb-0">
+                      <h5
+                        className="faq-title"
+                        data-bs-toggle="collapse"
+                        data-bs-target={item.datatarget}
+                        data-aria-expanded="true"
+                        data-aria-controls={item.id}
+                      >
+                        <span className="badge">{item.no}</span>
+                        {item.question}
+                      </h5>
+                    </div>
+                  </div>
+                  <div
+                    id={item.id}
+                    className="collapse"
+                    aria-labelledby={`heading-${item.id}`}
+                    data-parent="#accordion"
+                  >
+                    <div className="card-body">
+                      <p>{item.answer}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default FaqSection;
+

@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
-import { indonesiaOnlineTerms, indonesiaOfflineTerms } from "../data/term";
-import Navbar from "../../components/nrtc/Navbar";
-import Footer from "../../components/nrtc/Footers";
+import { indonesiaOnlineTerms, indonesiaOfflineTerms } from "../../data/terms";
+import Navbar from "../../components/common/Navbar";
+import Footer from "../../components/common/Footer";
 import "../../css/registration.css";
 
 function HomeIndo() {
@@ -42,7 +42,7 @@ function HomeIndo() {
           <div className="wrapper">
             <div className="text-center">
               <h1 className="mx-auto text-sm md:text-lg lg:text-5xl">
-                FORMULIR REGISTRASI{" "}
+                FORMULIR REGISTRASI
               </h1>
               <h3 className="mx-auto mt-5 mb-2 text-sm md:text-lg lg:text-2xl">
                 Pilih Kategori Kompetisi untuk Registrasi NRTC 2026
@@ -50,14 +50,6 @@ function HomeIndo() {
             </div>
           </div>
           <div className="link-web mx-auto text-center">
-            {/* <button
-              className="btn-regist btn-action text-center me-lg-5 m-2"
-              onClick={() =>
-                handleOpenModal("/indo-online", indonesiaOnlineTerms)
-              }
-            >
-              Kompetisi Daring<i className="fa-solid fa-earth-americas"></i>
-            </button> */}
             <button
               className="btn-regist btn-action text-center me-lg-5 m-2"
               disabled
@@ -65,22 +57,6 @@ function HomeIndo() {
             >
               Coming Soon 2027<i className="fa-solid fa-earth-americas"></i>
             </button>
-            {/* <a
-              className="btn-regist btn-action text-center me-lg-5 m-2"
-              onClick={() =>
-                handleOpenModal("/", )
-              }
-            >
-              Tutup Pendaftaran <i className="fa-solid fa-earth-americas"></i>
-            </a> */}
-            {/* <button
-              className="btn-regist btn-action text-center me-lg-5 m-2"
-              onClick={() =>
-                handleOpenModal("/indo-offline", indonesiaOfflineTerms)
-              }
-            >
-              Kompetisi Luring<i className="fa-solid fa-earth-americas"></i>
-            </button> */}
             <button
               className="btn-regist btn-action text-center me-lg-5 m-2"
               disabled
@@ -94,7 +70,7 @@ function HomeIndo() {
       {showModal && (
         <div className="modal-overlay">
           <div className="modal-content">
-            <h2 className="text-4xl">Syarat & Ketentuan</h2>
+            <h2 className="text-4xl">Syarat &amp; Ketentuan</h2>
             <div>{termsContent}</div>
             <div className="checkbox mt-2">
               <input
@@ -104,7 +80,7 @@ function HomeIndo() {
                 onChange={(e) => setTermsAccepted(e.target.checked)}
               />
               <label htmlFor="terms">
-                Saya menyetujui Syarat & Ketentuan di atas
+                Saya menyetujui Syarat &amp; Ketentuan di atas
               </label>
             </div>
             <div className="modal-actions">
@@ -115,7 +91,7 @@ function HomeIndo() {
                 Kembali
               </button>
               <button className="btn btn-primary" onClick={handleAccept}>
-                Terima & Proses
+                Terima &amp; Proses
               </button>
             </div>
           </div>

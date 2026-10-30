@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Navbar from "../../../components/nrtc/Navbar";
-import Footer from "../../../components/nrtc/Footers";
+import Navbar from "../../../components/common/Navbar";
+import Footer from "../../../components/common/Footer";
 
 export default function List2026() {
-  const [mode, setMode] = useState("online"); // "online" or "offline"
+  const [mode, setMode] = useState("online");
 
   const categories = [
     {
@@ -20,17 +20,14 @@ export default function List2026() {
   return (
     <>
       <Navbar />
-      {/* BREADCUMB START */}
       <div className="breadcumb-low text-center">
         <h1 className="display-5">Pemenang 2026</h1>
         <p className="lead text-muted">
           Pilih kategori dan mode untuk melihat PDF pemenang
         </p>
       </div>
-      {/* BREADCUMB END */}
 
       <div className="container py-5">
-        {/* Mode Switch (Online / Offline) */}
         <div className="d-flex justify-content-center mb-4">
           <div className="btn-group" role="group" aria-label="Mode selection">
             <button
@@ -56,7 +53,7 @@ export default function List2026() {
 
         <div className="row g-4">
           {categories.map((cat) => {
-            const link = cat.driveLink[mode]; // jika kosong => falsy
+            const link = cat.driveLink[mode];
             return (
               <div key={cat.label} className="col-12 col-md-6 col-lg-4">
                 <div className="card h-100 shadow-sm">

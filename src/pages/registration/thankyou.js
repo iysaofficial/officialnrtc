@@ -1,7 +1,7 @@
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
-import Navbar from "../../components/nrtc/Navbar";
-import Footer from "../../components/nrtc/Footers";
+import Navbar from "../../components/common/Navbar";
+import Footer from "../../components/common/Footer";
 import "../../css/registration.css";
 
 function Thankyou() {
@@ -15,54 +15,55 @@ function Thankyou() {
 
   return (
     <>
-    <Navbar />
-    <section className="thankyou">
-      <div>
-        <h1>Terima Kasih telah mendaftar!</h1>
-        <p>
-          Kami menghargai partisipasi Anda dan menantikan keterlibatan Anda.
-        </p>
+      <Navbar />
+      <section className="thankyou">
+        <div>
+          <h1>Terima Kasih telah mendaftar!</h1>
+          <p>
+            Kami menghargai partisipasi Anda dan menantikan keterlibatan Anda.
+          </p>
 
-        <table className="thankyou-table">
-          <tbody>
-            <tr>
-              <td>
-                <strong>Anggota Tim</strong>
-              </td>
-              <td>{fullName}</td>
-            </tr>
-            <tr>
-              <td>
-                <strong>Nama Sekolah</strong>
-              </td>
-              <td>{schoolName}</td>
-            </tr>
-            <tr>
-              <td>
-                <strong>Judul Proyek</strong>
-              </td>
-              <td>{projectTitle}</td>
-            </tr>
-            <tr>
-              <td>
-                <strong>Kategori Kompetisi</strong>
-              </td>
-              <td>{category}</td>
-            </tr>
-          </tbody>
-        </table>
+          <table className="thankyou-table">
+            <tbody>
+              <tr>
+                <td>
+                  <strong>Anggota Tim</strong>
+                </td>
+                <td>{fullName}</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Nama Sekolah</strong>
+                </td>
+                <td>{schoolName}</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Judul Proyek</strong>
+                </td>
+                <td>{projectTitle}</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Kategori Kompetisi</strong>
+                </td>
+                <td>{category}</td>
+              </tr>
+            </tbody>
+          </table>
 
-        <p>
-          <strong>
-            *Jika data muncul, tangkap layar halaman ini sebagai bukti pendaftaran berhasil
-          </strong>
-        </p>
-        <Link to="/homeindo" className="btn btn-action">
-          Kembali ke Menu Pendaftaran
-        </Link>
-      </div>
-    </section>
-    <Footer />
+          <p>
+            <strong>
+              *Jika data muncul, tangkap layar halaman ini sebagai bukti
+              pendaftaran berhasil
+            </strong>
+          </p>
+          <Link to="/homeindo" className="btn btn-action">
+            Kembali ke Menu Pendaftaran
+          </Link>
+        </div>
+      </section>
+      <Footer />
     </>
   );
 }

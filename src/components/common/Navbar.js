@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useCallback } from "react";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
@@ -13,7 +12,7 @@ const Navbar = () => {
 
   const collapseSubMenu = useCallback(() => {
     const activeSubMenu = document.querySelector(
-      ".menu-item-has-children.active .sub-menu",
+      ".menu-item-has-children.active .sub-menu"
     );
     if (activeSubMenu) {
       activeSubMenu.removeAttribute("style");
@@ -26,7 +25,7 @@ const Navbar = () => {
     if (document.querySelector(".menu-item-has-children.active")) {
       collapseSubMenu();
     }
-  }, [isOpen, toggleNav, collapseSubMenu]); // ⬅️ sekarang fix!
+  }, [isOpen, toggleNav, collapseSubMenu]);
 
   useEffect(() => {
     const mediaSize = 991;
@@ -34,9 +33,11 @@ const Navbar = () => {
     const handleToggleNav = () => {
       const navMenu = document.querySelector(".nav-menu");
       const menuOverlay = document.querySelector(".menu-overlay");
-      navMenu.classList.toggle("open");
-      menuOverlay.classList.toggle("active");
-      toggleNav();
+      if (navMenu && menuOverlay) {
+        navMenu.classList.toggle("open");
+        menuOverlay.classList.toggle("active");
+        toggleNav();
+      }
     };
 
     const handleMenuClick = (event) => {
@@ -54,7 +55,9 @@ const Navbar = () => {
           }
           menuItemHasChildren.classList.add("active");
           const subMenu = menuItemHasChildren.querySelector(".sub-menu");
-          subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+          if (subMenu) {
+            subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+          }
         }
       }
     };
@@ -65,42 +68,31 @@ const Navbar = () => {
       }
     };
 
-    document
-      .querySelector(".open-nav-menu")
-      .addEventListener("click", handleToggleNav);
-    document
-      .querySelector(".close-nav-menu")
-      .addEventListener("click", handleToggleNav);
-    document
-      .querySelector(".menu-overlay")
-      .addEventListener("click", handleToggleNav);
-    document
-      .querySelector(".nav-menu")
-      .addEventListener("click", handleMenuClick);
+    const openBtn = document.querySelector(".open-nav-menu");
+    const closeBtn = document.querySelector(".close-nav-menu");
+    const overlay = document.querySelector(".menu-overlay");
+    const navMenu = document.querySelector(".nav-menu");
+
+    openBtn?.addEventListener("click", handleToggleNav);
+    closeBtn?.addEventListener("click", handleToggleNav);
+    overlay?.addEventListener("click", handleToggleNav);
+    navMenu?.addEventListener("click", handleMenuClick);
     window.addEventListener("resize", handleResize);
 
     return () => {
-      document
-        .querySelector(".open-nav-menu")
-        .removeEventListener("click", handleToggleNav);
-      document
-        .querySelector(".close-nav-menu")
-        .removeEventListener("click", handleToggleNav);
-      document
-        .querySelector(".menu-overlay")
-        .removeEventListener("click", handleToggleNav);
-      document
-        .querySelector(".nav-menu")
-        .removeEventListener("click", handleMenuClick);
+      openBtn?.removeEventListener("click", handleToggleNav);
+      closeBtn?.removeEventListener("click", handleToggleNav);
+      overlay?.removeEventListener("click", handleToggleNav);
+      navMenu?.removeEventListener("click", handleMenuClick);
       window.removeEventListener("resize", handleResize);
     };
-  }, [collapseSubMenu, resizeFix, toggleNav]); // sudah aman
+  }, [collapseSubMenu, resizeFix, toggleNav]);
 
   return (
     <header className="header">
       <div className="header-main">
         <div className="logo">
-          <img src="./assets/img/logo/NRTC PNG.WebP" alt="nrtc png" />
+          <img src="/assets/img/logo/NRTC PNG.WebP" alt="NRTC Logo" />
         </div>
         <div className="open-nav-menu">
           <span></span>
@@ -118,7 +110,7 @@ const Navbar = () => {
               <p data-toggle="sub-menu">Daftar Pemenang</p>
               <ul className="sub-menu text-center">
                 <li className="menu-item">
-                  <a href="listlow" target="_blank" rel="noreferrer noopener">
+                  <a href="/listlow" target="_blank" rel="noreferrer noopener">
                     Daftar Pemenang
                   </a>
                 </li>
@@ -262,16 +254,17 @@ const Navbar = () => {
               </ul>
             </li>
             <li className="menu-item">
-              <a href="#faqs">FAQ</a>
+              <a href="/#faqs">FAQ</a>
             </li>
             <li className="menu-item">
-              <a href="#conts">Kontak</a>
+              <a href="/#conts">Kontak</a>
             </li>
           </ul>
         </nav>
       </div>
-      {/* </div> */}
     </header>
   );
 };
+
 export default Navbar;
+

@@ -1,20 +1,22 @@
+import React from "react";
+
 export const indonesiaOnlineTerms = (
   <>
     <h5>
-      Sebelum melanjutkan, harap membaca dan menyetujui syarat & ketentuan
+      Sebelum melanjutkan, harap membaca dan menyetujui syarat &amp; ketentuan
       berikut untuk Peserta Daring:
     </h5>
-    {/* <h1 className="">Peserta Online:</h1> */}
     <ul>
       <li>
-        Peserta yang tidak mengumpulkan dokumen persyaratan (<em>extended abstract</em>, 
-        <em> PowerPoint</em>) setelah dua kali pengingat akan dianggap mengundurkan diri 
-        secara otomatis.
+        Peserta yang tidak mengumpulkan dokumen persyaratan (
+        <em>extended abstract</em>, <em>PowerPoint</em>) setelah dua kali
+        pengingat akan dianggap mengundurkan diri secara otomatis.
       </li>
       <li>
-        Peserta wajib menggunakan judul dan <em>extended abstract</em> yang sesuai dengan 
-        kategori yang diikuti. (Peserta internasional, wajib menggunakan bahasa Inggris untuk 
-        seluruh persyaratan dokumen yang dibutuhkan)
+        Peserta wajib menggunakan judul dan <em>extended abstract</em> yang
+        sesuai dengan kategori yang diikuti. (Peserta internasional, wajib
+        menggunakan bahasa Inggris untuk seluruh persyaratan dokumen yang
+        dibutuhkan)
       </li>
       <li>
         Keputusan panitia terkait hal ini bersifat final dan tidak dapat
@@ -34,28 +36,27 @@ export const indonesiaOnlineTerms = (
   </>
 );
 
-
 export const indonesiaOfflineTerms = (
   <>
     <h5>
-      Sebelum melanjutkan, harap membaca dan menyetujui syarat & ketentuan
+      Sebelum melanjutkan, harap membaca dan menyetujui syarat &amp; ketentuan
       berikut untuk Peserta Luring:
     </h5>
     <ul>
       <li>
-        Peserta yang tidak mengumpulkan berkas persyaratan (<em>extended abstract</em>,
-        <em> poster</em>) setelah dua kali pengingat akan dianggap mengundurkan diri
-        secara otomatis.
+        Peserta yang tidak mengumpulkan berkas persyaratan (
+        <em>extended abstract</em>, <em>poster</em>) setelah dua kali pengingat
+        akan dianggap mengundurkan diri secara otomatis.
       </li>
       <li>
-        Peserta wajib menggunakan judul dan <em>extended abstract</em> yang sesuai dengan
-        kategori yang diikuti. (Peserta internasional, wajib menggunakan bahasa
-        Inggris untuk seluruh <em>requirement</em>)
+        Peserta wajib menggunakan judul dan <em>extended abstract</em> yang
+        sesuai dengan kategori yang diikuti. (Peserta internasional, wajib
+        menggunakan bahasa Inggris untuk seluruh <em>requirement</em>)
       </li>
       <li>
         Peserta diwajibkan untuk membuat poster berukuran A0, membawa produk,
-        dan juga <em>paper</em>/<em>extended abstract</em> (dalam bentuk <em>hard copy</em>) pada saat sesi
-        penjurian.
+        dan juga <em>paper</em>/<em>extended abstract</em> (dalam bentuk{" "}
+        <em>hard copy</em>) pada saat sesi penjurian.
       </li>
       <li>
         Pemberian penghargaan kepada peserta akan dilakukan sesuai dengan urutan
@@ -67,10 +68,11 @@ export const indonesiaOfflineTerms = (
         dengan jadwal yang telah disusun oleh panitia penyelenggara.
       </li>
       <li>
-        Bagi peserta offline yang berhak atas hadiah <em>Best Booth</em>, <em>Best Poster</em>,
-        <em> Best Presentation</em>, <em>Best Project</em>, uang tunai, <em>Semi Grand Award</em>, dan 
-        <em>Grand Award</em> namun tidak dapat hadir pada acara penyerahan hadiah, maka hadiah
-        yang bersangkutan dinyatakan hangus.
+        Bagi peserta offline yang berhak atas hadiah <em>Best Booth</em>,{" "}
+        <em>Best Poster</em>, <em>Best Presentation</em>, <em>Best Project</em>,
+        uang tunai, <em>Semi Grand Award</em>, dan <em>Grand Award</em> namun
+        tidak dapat hadir pada acara penyerahan hadiah, maka hadiah yang
+        bersangkutan dinyatakan hangus.
       </li>
       <li>
         Keputusan panitia terkait hal ini bersifat final dan tidak dapat
@@ -89,3 +91,4 @@ export const indonesiaOfflineTerms = (
     </p>
   </>
 );
+

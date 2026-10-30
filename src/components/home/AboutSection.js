@@ -1,11 +1,13 @@
-const Abouts = () => {
+import React from "react";
+
+const AboutSection = () => {
   return (
     <section className="hero-section">
       <div className="back">
         <div className="container hero-row">
           <div className="nrtc-img-wrapper">
             <img
-              src="assets/img/logo/NRTC PNG.WebP"
+              src="/assets/img/logo/NRTC PNG.WebP"
               className="img-fluid nrtc-img"
               alt="NRTC Logo"
             />
@@ -40,4 +42,5 @@ const Abouts = () => {
   );
 };
 
-export default Abouts;
+export default AboutSection;
+

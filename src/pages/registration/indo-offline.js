@@ -1,17 +1,16 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../../components/nrtc/Navbar";
-import Footer from "../../components/nrtc/Footers";
+import Navbar from "../../components/common/Navbar";
+import Footer from "../../components/common/Footer";
 import "../../css/registration.css";
 
 function IndonesiaOffline() {
   const [selectedMaxNamaLengkap, setselectedMaxNamaLengkap] = useState("");
-  const maxNameChars = 180; // batasan maksimal karakter
+  const maxNameChars = 180;
   const [selectedMaxProject, setselectedMaxProject] = useState("");
   const [selectedNamaSekolah, setselectedNamaSekolah] = useState("");
-  const maxSchoolChars = 500; // batasan maksimal karakter
-  const maxProjectChars = 160; // batasan maksimal karakter
+  const maxSchoolChars = 500;
+  const maxProjectChars = 160;
   const [selectedCategory, setSelectedCategory] = useState("");
   const [categoryPrice, setCategoryPrice] = useState("");
   const [statusMessage, setStatusMessage] = useState("");
@@ -46,7 +45,6 @@ function IndonesiaOffline() {
     const value = e.target.value;
     setSelectedCategory(value);
 
-    // Logika untuk menentukan harga berdasarkan kategori yang dipilih
     switch (value) {
       case "National Research Teacher Competition - Offline Competition":
         setCategoryPrice("Rp. 3.150.000");
@@ -55,6 +53,7 @@ function IndonesiaOffline() {
         setCategoryPrice("");
         break;
       default:
+        setCategoryPrice("");
         break;
     }
   };
@@ -63,7 +62,7 @@ function IndonesiaOffline() {
     const termsAccepted = sessionStorage.getItem("termsAccepted");
     if (!termsAccepted) {
       alert("Anda harus menyetujui Syarat & Ketentuan terlebih dahulu.");
-      router("/homeindo"); // Navigasi ke halaman HomeIndo
+      router("/homeindo");
     }
   }, [router]);
 
@@ -78,7 +77,7 @@ function IndonesiaOffline() {
         e.preventDefault();
         setShowModal(true);
         setCanClick(false);
-        setCountdown(5); // Set ulang countdown saat modal muncul
+        setCountdown(5);
 
         let count = 5;
         const interval = setInterval(() => {
@@ -86,7 +85,7 @@ function IndonesiaOffline() {
           setCountdown(count);
 
           if (count <= 1) {
-            clearInterval(interval); // Hentikan countdown di angka 1
+            clearInterval(interval);
             setCanClick(true);
           }
         }, 1000);
@@ -100,7 +99,7 @@ function IndonesiaOffline() {
   }, []);
 
   const handleConfirmSubmit = async () => {
-    setShowModal(false); // Tutup modal
+    setShowModal(false);
     const form = document.forms["regist-form"];
 
     if (!form) return;
@@ -115,21 +114,16 @@ function IndonesiaOffline() {
       if (response.ok) {
         setStatusMessage("Data berhasil dikirim!");
 
-        // Ambil data sebelum reset
-        // const formData = {
-        //   namaLengkap: selectedMaxNamaLengkap,
-        //   projectTitle: selectedMaxProject,
-        //   category: selectedCategory,
-        //   namasekolah: selectedNamaSekolah,
-        // };
-
         form.reset();
         setTimeout(() => {
           router(
-            `/thankyou?namaLengkap=${encodeURIComponent(selectedMaxNamaLengkap)}
-            &projectTitle=${encodeURIComponent(selectedMaxProject)}
-            &category=${encodeURIComponent(selectedCategory)}
-            &namasekolah=${encodeURIComponent(selectedNamaSekolah)}`,
+            `/thankyou?namaLengkap=${encodeURIComponent(
+              selectedMaxNamaLengkap
+            )}&projectTitle=${encodeURIComponent(
+              selectedMaxProject
+            )}&category=${encodeURIComponent(
+              selectedCategory
+            )}&namasekolah=${encodeURIComponent(selectedNamaSekolah)}`
           );
         }, 1000);
       } else {
@@ -210,11 +204,15 @@ function IndonesiaOffline() {
             )}
 
             <form name="regist-form">
+              {/* BIODATA START */}
               <h1 className="text-sm md:text-lg lg:text-5xl">BIODATA</h1>
               <span className="garis-bawah"></span>
               <div className="user-details">
                 <div className="input-box">
-                  <label className="form-label" value="Peserta Indonesia">
+                  <label
+                    htmlFor="CATEGORY_PARTICIPANT"
+                    className="form-label"
+                  >
                     Kategori Peserta
                   </label>
                   <input
@@ -228,15 +226,16 @@ function IndonesiaOffline() {
                   />
                 </div>
                 <div className="input-box">
-                  <label for="CATEGORY_COMPETITION" className="form-label">
+                  <label
+                    htmlFor="CATEGORY_COMPETITION"
+                    className="form-label"
+                  >
                     Kategori Kompetisi
                   </label>
                   <select
-                    type="text"
                     id="CATEGORY_COMPETITION"
                     name="CATEGORY_COMPETITION"
                     className="form-control"
-                    placeholder="Pilih Kategori Kompetisi"
                     onChange={handleCategoryChange}
                     required
                   >
@@ -254,7 +253,7 @@ function IndonesiaOffline() {
               <div className="user-details">
                 <div className="input-box">
                   <label htmlFor="NAMA_LENGKAP" className="form-label">
-                    Nama Ketua & Anggota Tim
+                    Nama Ketua &amp; Anggota Tim
                   </label>
                   <label>
                     <p>
@@ -267,7 +266,6 @@ function IndonesiaOffline() {
                     <h6>Irsyad Zaidan Kamil</h6>
                   </label>
                   <textarea
-                    type="text"
                     id="NAMA_LENGKAP"
                     name="NAMA_LENGKAP"
                     className="form-control"
@@ -281,7 +279,7 @@ function IndonesiaOffline() {
                   </p>
                 </div>
                 <div className="input-box">
-                  <label for="LEADER_WHATSAPP" className="form-label">
+                  <label htmlFor="LEADER_WHATSAPP" className="form-label">
                     Nomor WhatsApp Ketua Tim
                     <p>
                       Harap tulis dengan kode telepon, contoh : (kode negara)
@@ -302,7 +300,7 @@ function IndonesiaOffline() {
                   />
                 </div>
                 <div className="input-box">
-                  <label for="LEADER_EMAIL" className="form-label">
+                  <label htmlFor="LEADER_EMAIL" className="form-label">
                     Alamat Email Ketua Tim
                   </label>
                   <label>
@@ -321,31 +319,9 @@ function IndonesiaOffline() {
                     required
                   />
                 </div>
-                {/* <div className="input-box">
-                  <label for="NISN_NIM" className="form-label">
-                    NISN / NIM Ketua & Anggota Tim
-                  </label>
-                  <label>
-                    <p>
-                      Notes : Masukan NISN / NIM dengan sesuai urutan nama ketua
-                      dan anggota tim, dengan format seperti berikut :
-                    </p>
-                    <h6>231700</h6>
-                    <h6>241700</h6>
-                    <h6>251700</h6>
-                  </label>
-                  <textarea
-                    type="text"
-                    id="NISN_NIM"
-                    name="NISN_NIM"
-                    className="form-control"
-                    placeholder="Masukan NISN / NIM Ketua & Anggota Tim"
-                    required
-                  ></textarea>
-                </div> */}
               </div>
+              {/* BIODATA END */}
 
-              {/* DATA SEKOLAH START */}
               {/* DATA SEKOLAH START */}
               <h1 className="text-sm md:text-lg lg:text-5xl">DATA SEKOLAH</h1>
               <span className="garis-bawah"></span>
@@ -365,7 +341,6 @@ function IndonesiaOffline() {
                     <h6>SMA TADIKA MESRA</h6>
                   </label>
                   <textarea
-                    type="text"
                     id="NAMA_SEKOLAH"
                     name="NAMA_SEKOLAH"
                     className="form-control"
@@ -378,53 +353,8 @@ function IndonesiaOffline() {
                     {selectedNamaSekolah.length} / {maxSchoolChars} karakter
                   </p>
                 </div>
-                {/* <div className="input-box">
-                  <label for="NPSN" className="form-label">
-                    Nomor Pokok Sekolah Nasional (NPSN)
-                  </label>
-                  <label>
-                    <p>
-                      Notes : Masukan NPSN jika masi bersekolah dengan sesuai
-                      urutan nama ketua dan anggota tim, dengan format seperti
-                      berikut :
-                    </p>
-                    <h6>1201301</h6>
-                    <h6>1302402</h6>
-                    <h6>1020100</h6>
-                  </label>
-                  <textarea
-                    type="number"
-                    id="NPSN"
-                    name="NPSN"
-                    className="form-control"
-                    placeholder="Masukan Nomor Pokok Sekolah Nasional (NPSN)"
-                  ></textarea>
-                </div>
                 <div className="input-box">
-                  <label for="GRADE" className="form-label">
-                    Jenjang Pendidikan{" "}
-                  </label>
-                  <select
-                    type="text"
-                    id="GRADE"
-                    name="GRADE"
-                    className="form-control"
-                    placeholder="Choose Grade"
-                    required
-                  >
-                    <option value="">--Pilih Jenjang Pendidikan Anda--</option>
-                    <option value="Sekolah Dasar">Sekolah Dasar</option>
-                    <option value="Sekolah Menengah Pertama">
-                      Sekolah Menengah Pertama
-                    </option>
-                    <option value="Sekolah Menengah Atas">
-                      Sekolah Menengah Atas
-                    </option>
-                    <option value="Universitas">Universitas</option>
-                  </select>
-                </div> */}
-                <div className="input-box">
-                  <label for="PROVINCE" className="form-label">
+                  <label htmlFor="PROVINCE" className="form-label">
                     Provinsi
                   </label>
                   <input
@@ -438,69 +368,9 @@ function IndonesiaOffline() {
                 </div>
               </div>
               {/* DATA SEKOLAH END */}
-              {/* DATA SEKOLAH END */}
-
-              {/* DATA PEMBIMBING START */}
-              {/* DATA PEMBIMBING START */}
-              {/* <h1 className="text-sm md:text-lg lg:text-5xl">
-                DATA PEMBIMBING
-              </h1> */}
-              {/* <span className="garis-bawah"></span>
-              <span className="user-details">
-                <div className="input-box">
-                  <label for="NAME_SUPERVISOR" className="form-label">
-                    Nama Pembimbing
-                  </label>
-                  <textarea
-                    type="text"
-                    id="NAME_SUPERVISOR"
-                    name="NAME_SUPERVISOR"
-                    className="form-control"
-                    placeholder="Masukan Nama Pembimbing"
-                    required
-                  ></textarea>
-                </div>
-                <div className="input-box">
-                  <label
-                    for="WHATSAPP_NUMBER_SUPERVISOR"
-                    className="form-label"
-                  >
-                    Nomor WhatsApp Pembimbing
-                    <p>
-                      Harap tulis dengan kode telepon, contoh : (kode negara)
-                      (nomor telepon) +62 81770914xxx
-                    </p>
-                  </label>
-                  <input
-                    type="number"
-                    id="WHATSAPP_NUMBER_SUPERVISOR"
-                    name="WHATSAPP_NUMBER_SUPERVISOR"
-                    className="form-control"
-                    placeholder="Masukan Nomor WhatsApp Pembimbing"
-                    required
-                  />
-                </div>
-
-                <div className="input-box">
-                  <label for="EMAIL_TEACHER_SUPERVISOR" className="form-label">
-                    Alamat Email Pembimbing
-                  </label>
-                  <input
-                    type="email"
-                    id="EMAIL_TEACHER_SUPERVISOR"
-                    name="EMAIL_TEACHER_SUPERVISOR"
-                    className="form-control"
-                    placeholder="Alamat Email Pembimbing"
-                    required
-                  />
-                </div>
-              </span> */}
-              {/* DATA PEMBIMBING END */}
-              {/* DATA PEMBIMBING END */}
 
               {/* DETAIL PROJECT START */}
-              {/* DETAIL PROJECT START */}
-              <div className="">
+              <div>
                 <h1 className="text-sm md:text-lg lg:text-5xl">
                   DETAIL PROYEK
                 </h1>
@@ -508,7 +378,7 @@ function IndonesiaOffline() {
               </div>
               <div className="user-details">
                 <div className="input-box">
-                  <label for="PROJECT_TITLE" className="form-label">
+                  <label htmlFor="PROJECT_TITLE" className="form-label">
                     Judul Proyek
                     <p>
                       Notes : Dimohon untuk mengisi data judul dengan BENAR,
@@ -516,7 +386,6 @@ function IndonesiaOffline() {
                     </p>
                   </label>
                   <textarea
-                    type="text"
                     id="PROJECT_TITLE"
                     name="PROJECT_TITLE"
                     className="form-control"
@@ -530,7 +399,6 @@ function IndonesiaOffline() {
                   </p>
                 </div>
 
-                {/* Dropdown Kategori */}
                 <div className="input-box">
                   <label htmlFor="CATEGORIES" className="form-label">
                     Kategori
@@ -554,19 +422,17 @@ function IndonesiaOffline() {
                 </div>
 
                 <div className="input-box">
-                  <label for="YES_NO" className="form-label">
+                  <label htmlFor="YES_NO" className="form-label">
                     Apakah judul proyek pernah berpartisipasi dalam kompetisi
                     penemuan dan inovasi sebelumnya?
                   </label>
                   <select
-                    type="text"
                     id="YES_NO"
                     name="YES_NO"
                     className="form-control"
-                    placeholder="--Memilih Sumber Daya Informasi--"
                     required
                   >
-                    <option>--Pilih--</option>
+                    <option value="">--Pilih--</option>
                     <option value="Yes">Ya</option>
                     <option value="No">Tidak</option>
                   </select>
@@ -574,14 +440,13 @@ function IndonesiaOffline() {
 
                 <div className="input-box">
                   <label
-                    for="JUDUL_PERNAH_BERPATISIPASI"
+                    htmlFor="JUDUL_PERNAH_BERPATISIPASI"
                     className="form-label"
                   >
                     Jika judul proyek pernah mengikuti kompetisi invensi dan
                     inovasi lainnya, mohon tuliskan nama kompetisinya
                   </label>
                   <textarea
-                    type="text"
                     id="JUDUL_PERNAH_BERPATISIPASI"
                     name="JUDUL_PERNAH_BERPATISIPASI"
                     className="form-control"
@@ -589,9 +454,9 @@ function IndonesiaOffline() {
                   ></textarea>
                   <div className="mt-5" id="form_alerts"></div>
                 </div>
-                {/* Kolom Harga */}
+
                 <div className="input-box invisible">
-                  <label htmlFor="CATEGORY_PRICE" className="form-label ">
+                  <label htmlFor="CATEGORY_PRICE" className="form-label">
                     Registration Price
                   </label>
                   <input
@@ -606,11 +471,9 @@ function IndonesiaOffline() {
                 </div>
               </div>
               {/* DETAIL PROJECT END */}
-              {/* DETAIL PROJECT END */}
 
               {/* GENERAL INFORMATION START */}
-              {/* GENERAL INFORMATION START */}
-              <div className="">
+              <div>
                 <h1 className="text-sm md:text-lg lg:text-5xl">
                   INFORMASI UMUM
                 </h1>
@@ -618,17 +481,16 @@ function IndonesiaOffline() {
               </div>
               <div className="user-details">
                 <div className="input-box">
-                  <label for="COMPLETE_ADDRESS" className="form-label">
+                  <label htmlFor="COMPLETE_ADDRESS" className="form-label">
                     Alamat Lengkap
                   </label>
                   <label>
                     <p>
                       Mohon tuliskan alamat lengkap (Nama Jalan, Nomor Rumah,
-                      RT&RW, Kecamatan, Kabupaten, Kota, Provinsi, Kode Pos)
+                      RT&amp;RW, Kecamatan, Kabupaten, Kota, Provinsi, Kode Pos)
                     </p>
                   </label>
                   <textarea
-                    type="text"
                     id="COMPLETE_ADDRESS"
                     name="COMPLETE_ADDRESS"
                     className="form-control"
@@ -637,15 +499,13 @@ function IndonesiaOffline() {
                   ></textarea>
                 </div>
                 <div className="input-box">
-                  <label for="INFORMATION_RESOURCES" className="form-label">
+                  <label htmlFor="INFORMATION_RESOURCES" className="form-label">
                     Sumber Informasi Kompetisi NRTC 2026
                   </label>
                   <select
-                    type="text"
                     id="INFORMATION_RESOURCES"
                     name="INFORMATION_RESOURCES"
                     className="form-control"
-                    placeholder="--Memilih Sumber Daya Informasi--"
                     required
                   >
                     <option value="">--Pilih Sumber Informasi--</option>
@@ -663,10 +523,10 @@ function IndonesiaOffline() {
                   </select>
                 </div>
                 <div className="input-box">
-                  <label for="FILE" className="form-label">
+                  <label htmlFor="FILE" className="form-label">
                     Jika Anda mendapatkan pendaftaran gratis dari acara
                     sebelumnya atau kegiatan kunjungan sekolah sebelumnya, harap
-                    lampirkan bukti dokumentasi{" "}
+                    lampirkan bukti dokumentasi
                   </label>
                   <input
                     type="url"
@@ -678,12 +538,12 @@ function IndonesiaOffline() {
                 </div>
               </div>
               {/* GENERAL INFORMATION END */}
-              {/* GENERAL INFORMATION END */}
+
               <div className="button">
                 <input type="submit" value="SUBMIT" />
               </div>
             </form>
-            {/* Loader dan Status Message */}
+
             {isLoading && (
               <div className="overlay-loader">
                 <div className="loader"></div>

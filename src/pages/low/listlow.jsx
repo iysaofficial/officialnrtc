@@ -1,6 +1,7 @@
 import React from "react";
-import Navbar from "../../components/nrtc/Navbar";
-import Footers from "../../components/nrtc/Footers";
+import Navbar from "../../components/common/Navbar";
+import Footer from "../../components/common/Footer";
+
 function ListLow() {
   const winners = [
     {
@@ -37,21 +38,17 @@ function ListLow() {
 
   return (
     <>
-    <Navbar></Navbar>
-      {/* BREADCUMB START */}
+      <Navbar />
       <div className="breadcumb-low text-center">
         <h1>List Pemenang</h1>
-        <p>Lihat daftar pemenang NSIF dari berbagai tahun</p>
+        <p>Lihat daftar pemenang NRTC dari berbagai tahun</p>
       </div>
-      {/* BREADCUMB END */}
 
-      {/* Main Content */}
       <div className="container py-5">
         <div className="row g-4">
           {winners.map((item) => (
             <div key={item.year} className="col-md-6 col-lg-4">
               <div className="card h-100 shadow-sm text-center">
-                {/* Color Header */}
                 <div
                   className={`bg-${item.color} p-5`}
                   style={{ height: "120px" }}
@@ -59,11 +56,9 @@ function ListLow() {
                   <div className="text-white fs-1">🏆</div>
                 </div>
 
-                {/* Card Body */}
                 <div className="card-body d-flex flex-column justify-content-center align-items-center">
                   <h5 className="card-title fw-bold fs-4 mb-3">{item.year}</h5>
 
-                  {/* Link Internal atau External */}
                   {item.external ? (
                     <a
                       href={item.link}
@@ -86,7 +81,7 @@ function ListLow() {
           ))}
         </div>
       </div>
-      <Footers/>
+      <Footer />
     </>
   );
 }

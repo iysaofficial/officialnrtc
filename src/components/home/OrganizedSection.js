@@ -1,5 +1,6 @@
 import React from "react";
-const Organized = () => {
+
+const OrganizedSection = () => {
   return (
     <section className="event_sponser_area">
       <div className="container">
@@ -7,24 +8,21 @@ const Organized = () => {
           <div className="event_sponser_item">
             <div className="row Organized-by">
               <div className="col-lg-3 col-md-4">
-                <h4 className="h_head sponser_title mb-5">Diselenggarakan Oleh :</h4>
+                <h4 className="h_head sponser_title mb-5">
+                  Diselenggarakan Oleh :
+                </h4>
               </div>
               <div className="organized-image image col-lg-9 col-md-8 text-lg-start text-md-start text-center">
                 <img
-                  src="./assets/img/logo/IYSAlogo.WebP"
-                  className=" col-3 image-iysa"
-                  alt="gallery"
+                  src="/assets/img/logo/IYSAlogo.WebP"
+                  className="col-3 image-iysa"
+                  alt="IYSA Logo"
                 />
                 <img
-                  src="./assets/img/logo/Logo FMIPA UI-10.png"
+                  src="/assets/img/logo/Logo FMIPA UI-10.png"
                   className="ms-5 col-2 image-ui"
-                  alt="gallery"
+                  alt="FMIPA UI Logo"
                 />
-                {/* <img
-                  src="./assets/img/logo/IZMIR IISEEF.png"
-                  className="ms-1 col-3 image-vokasi"
-                  alt="gallery"
-                /> */}
               </div>
             </div>
           </div>
@@ -34,4 +32,5 @@ const Organized = () => {
   );
 };
 
-export default Organized;
+export default OrganizedSection;
+

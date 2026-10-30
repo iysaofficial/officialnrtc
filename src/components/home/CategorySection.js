@@ -1,57 +1,57 @@
-const Category = () => {
+import React from "react";
+
+const CategorySection = () => {
   return (
     <section className="expert-team min-vh-100 mb-5">
       <div className="pem container-lg">
         <h1 className="text-center row-cols-sm-2">Kategori</h1>
         <span className="garis-bawah"></span>
         <div className="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
-          <div className="col text-center mx-auto mx-auto">
+          <div className="col text-center mx-auto">
             <img
-              src="./assets/img/logo/sus.WebP"
-              className="gallery-item "
-              alt="gallery"
+              src="/assets/img/logo/sus.WebP"
+              className="gallery-item"
+              alt="Sustainability Development"
             />
-            <h5 className="text-center">
-              Sustainability Development
-            </h5>
+            <h5 className="text-center">Sustainability Development</h5>
           </div>
           <div className="col text-center mx-auto">
             <img
-              src="./assets/img/logo/life.WebP"
+              src="/assets/img/logo/life.WebP"
               className="gallery-item mt-4"
-              alt="gallery"
+              alt="Life Sciences"
             />
             <h5 className="text-center mt-5">Life Sciences</h5>
           </div>
           <div className="col text-center mx-auto">
             <img
-              src="./assets/img/logo/eng.WebP"
+              src="/assets/img/logo/eng.WebP"
               className="gallery-item"
-              alt="gallery"
+              alt="Engineering"
             />
             <h5 className="text-center">Engineering</h5>
           </div>
           <div className="col text-center mx-auto">
             <img
-              src="./assets/img/logo/ed.png"
+              src="/assets/img/logo/ed.png"
               className="gallery-item"
-              alt="gallery"
+              alt="Education"
             />
             <h5 className="text-center">Education</h5>
           </div>
           <div className="col text-center mx-auto">
             <img
-              src="./assets/img/logo/en.WebP"
+              src="/assets/img/logo/en.WebP"
               className="gallery-item mt-4"
-              alt="gallery"
+              alt="Environmental"
             />
             <h5 className="text-center mt-5">Environmental</h5>
           </div>
           <div className="col text-center mx-auto">
             <img
-              src="./assets/img/logo/tek.WebP"
+              src="/assets/img/logo/tek.WebP"
               className="gallery-item"
-              alt="gallery"
+              alt="Technology"
             />
             <h5 className="text-center mt-4">Technology</h5>
           </div>
@@ -61,4 +61,5 @@ const Category = () => {
   );
 };
 
-export default Category;
+export default CategorySection;
+
